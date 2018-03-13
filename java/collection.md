@@ -1,4 +1,4 @@
-Collection concepts
+**Collection concepts**
 
 # For loop over a collection
 
