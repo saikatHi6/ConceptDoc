@@ -28,3 +28,27 @@ Submodule is configuarable which can configured in root module.
 
 **Note main.ts is help to bootstrap main module/class "AppModule"**
 
+**Template Expression**
+Exp {{expression}}
+**Template Statement**
+(event) = statement
+Exp (click) = "changeName()"
+
+**Directives**
+Directives are used to change the behaviour of the components or elements. We can use directives in the of HTML attributes.
+
+Why Directives?
+We need to modify thr DOM elements.
+Reusable and independent code.
+Create custom elements to implements the requered funtionality.
+
+Types of directives
+Component: directive with templates
+Strucral directives : it helps to add or remove DOM elements. * derective-name = expression exp: ngIf,ngFor (it doesn't hide elements)
+Attributes directives: 
+
+
+
+
+
+
