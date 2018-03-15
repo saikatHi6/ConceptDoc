@@ -39,14 +39,16 @@ Directives are used to change the behaviour of the components or elements. We ca
 
 **Why Directives?**
 
-We need to modify thr DOM elements.
+We canuse it to modify the DOM elements.
 Reusable and independent code.
 Create custom elements to implements the requered funtionality.
 
 Types of directives
 
 Component:  directive with templates
+
 Strucral directives :  it helps to add or remove DOM elements. * derective-name = expression exp: ngIf,ngFor (it doesn't hide elements)
+
 Attributes directives: 
 
 -------------------------------------------
