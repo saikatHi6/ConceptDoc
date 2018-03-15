@@ -93,6 +93,30 @@ exp: {{expression | titlecase}}
   <option value= "en">English </option>
  </select> 
  
+**How Many types of form control is their?**
+
+1) Template Driven
+2) Reactive Form
+
+
+**What is Service?**
+
+It is a class which containe some funtionality we can reuse across the application.
+@injectable decorator is use to make class as a service. 
+Promiese is a javascript object which return data Asynchrounously.Promiese has then() method which will invoked when promies response is recieve from service.
+
+**What is RxJs?**
+
+Reactive Extension of Java Script is a third party libary in Angular.
+
+**What is Observabale? Why Observable?**
+
+It use to represent asynchrounous stream of data. It more powerfull from Promiese.
+
+1) Promiese  emite a singale value where observabale(streams) emit many values.
+2) Observable can be cancelabale where Promise is not. If http request are not requered we can cancel but Promiese execute eiter success or failuercallback even it is not requered..
+3) Observable support funtional oparation map,filter,reduce etc.
+
 
 
 
