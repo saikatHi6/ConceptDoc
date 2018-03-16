@@ -11,7 +11,7 @@ Every component is a Class and export is used to make it accessable to other com
 
 **Databinding:** 
 
-we can use interpolation "{{}}" in template file for two way binding.
+we can use interpolation "{{}}" in template file for one way binding.
 
 **Module:**
 
