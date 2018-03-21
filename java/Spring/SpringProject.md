@@ -19,3 +19,4 @@ https://dzone.com/refcardz/spring-configuration?chapter=1
 
 When the class containing @Configuration or @Component contains @Bean annotated methods, those methods act as factory beans. The difference lies in the inter-bean references when one @Bean method invokes another @Bean method. If the class is annotated with @Component the @Bean method invocation is treated as a standard Java method invocation whereas when a @Bean method declared in @Configuration is called the method invocation is intercepted using CGLIB proxy and the bean cached in the spring container is returned.
 
+https://dzone.com/articles/creating-a-rest-api-with-java-and-spring
