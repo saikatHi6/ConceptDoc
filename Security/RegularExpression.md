@@ -9,3 +9,9 @@ this is use for express global. It will return all mathes. No matters how many t
 
 * . - 
 Means wild cart expression. It mathes everything. except new line charachter. 
+
+* \ - This for special charachter recognizaation.
+
+* [] - This is call charachter set. Only 1 charachter will match inside the charachter set. exm: [CD] any one will take as a match.
+
+
