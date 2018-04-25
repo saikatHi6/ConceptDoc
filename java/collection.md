@@ -12,6 +12,6 @@ We can remove element. Add method is not supported by itarator.
 
 We can add elements through this.
 
-### removeAll : Remove only common elements.
+* removeAll : Remove only common elements.
 
-### retainAll: Only keep common elements between two list.
+* retainAll: Only keep common elements between two list.
