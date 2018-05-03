@@ -15,3 +15,7 @@ We can add elements through this.
 * removeAll : Remove only common elements.
 
 * retainAll: Only keep common elements between two list.
+
+
+
+https://www.sitepoint.com/how-to-implement-javas-hashcode-correctly/
