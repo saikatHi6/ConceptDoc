@@ -15,6 +15,8 @@ How many type of security for Infastructure.
 i) Networks
 ii) Hosts/VM
 
-OWASP for tradinional security
+
+
+![OWASP for tradinional security](https://user-images.githubusercontent.com/4381376/42995426-76c8cdd0-8c2e-11e8-9f55-917d792e7dec.png)
 
 
