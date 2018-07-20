@@ -7,3 +7,5 @@ API throttling means no of API calls in particular time.
 
 
 [REST security Cheat sheet](https://www.owasp.org/index.php/REST_Security_Cheat_Sheet)
+
+[REST security with OAuth2.0 and HMAC](https://searchmicroservices.techtarget.com/news/450296678/Taking-a-new-look-at-security-in-RESTful-API-design)
