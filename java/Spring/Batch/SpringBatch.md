@@ -29,16 +29,13 @@ Batch Core: It's contain core runtime classes necessary to launc and control a b
 
 Batch Infustructure: Both Application and Batch core build on common infustructure. It's containe ItemReader, ItemWriter.
 
-General Batch Principles and Guidelines:
+**General Batch Principles and Guidelines:**
 
 Minimized the system resources like I/O oparation. Perform in internal memory.
 Review application I/O (analyze SQL statements) to ensure that unnecessary physical I/O is avoided. In particular, the following four common flaws need to be looked for:
 
-Reading data for every transaction when the data could be read once and cached or kept in the working storage.
-
-Rereading data for a transaction where the data was read earlier in the same transaction.
-
-Causing unnecessary table or index scans.
-
-Not specifying key values in the WHERE clause of an SQL statement.
+    1) Reading data for every transaction when the data could be read once and cached or kept in the working storage.
+    2) Rereading data for a transaction where the data was read earlier in the same transaction.
+    3) Causing unnecessary table or index scans.
+    4) Not specifying key values in the WHERE clause of an SQL statement.
 
