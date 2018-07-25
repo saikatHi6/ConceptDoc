@@ -1,11 +1,11 @@
-</b>What is Spring Batch?
+**What is Spring Batch?**
 
 Spring batch is a lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for 
 the daily operations of enterprise systems. Spring Batch builds upon the characteristics of the Spring Framework that people have
 come to expect (productivity, POJO-based development approach, and general ease of use), while making it easy for developers to access 
 and leverage more advance enterprise services when necessary.
 
-Business oparation:
+**Business oparation:**
 
 Automate, complex processing of large amount of data that is most efficiently processed without human intaraction. Like schedulers Month 
 end calculation, notices etc.
@@ -13,15 +13,13 @@ end calculation, notices etc.
 Integration of information that is recieved from internal and external system that typically needs to be formating,validating and
 processing in a transactional manner into the system of records.
 
-Usage Scenario:
+**Usage Scenario:**
 
-Reads a large no of records from database, file or queue.
+1) Reads a large no of records from database, file or queue.
+2) processes the data in some critaria.
+3) write data in modified form.
 
-processes the data in some critaria.
-
-write data in modified form.
-
-Spring Batch Architechture:
+**Spring Batch Architechture:**
 
 Three tier architechture Application, Batch Core and Batch Infustructure.
 
@@ -31,5 +29,16 @@ Batch Core: It's contain core runtime classes necessary to launc and control a b
 
 Batch Infustructure: Both Application and Batch core build on common infustructure. It's containe ItemReader, ItemWriter.
 
-General Batch Principles and Guidelines
+General Batch Principles and Guidelines:
+
+Minimized the system resources like I/O oparation. Perform in internal memory.
+Review application I/O (analyze SQL statements) to ensure that unnecessary physical I/O is avoided. In particular, the following four common flaws need to be looked for:
+
+Reading data for every transaction when the data could be read once and cached or kept in the working storage.
+
+Rereading data for a transaction where the data was read earlier in the same transaction.
+
+Causing unnecessary table or index scans.
+
+Not specifying key values in the WHERE clause of an SQL statement.
 
