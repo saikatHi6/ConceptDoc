@@ -7,3 +7,5 @@
 5. Docker build -t <file Name>() <docker file directory>
 6. Docker run -t(psedo terminal) -i(interactive mode) <file name> for [more refarance-](https://gist.github.com/v0lkan/c413cf9477b607db1ea1117c9de853df)
 
+If docker not run in your windows ::powershell -ExecutionPolicy ByPass -File "C:\Program Files\Docker\Docker\resources\MobyLinux.ps1" -destroy
+run this command
