@@ -12,3 +12,7 @@ run this command
 
 This command is for getting docker IP address
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+
+docker container rm -f wildfly can be used to stop and remove the container in one command
+
+[Docker most used commands](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/ch04-run-container.adoc#stop-container)
