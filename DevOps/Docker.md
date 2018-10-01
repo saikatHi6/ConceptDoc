@@ -9,3 +9,6 @@
 
 If docker not run in your windows ::powershell -ExecutionPolicy ByPass -File "C:\Program Files\Docker\Docker\resources\MobyLinux.ps1" -destroy
 run this command
+
+This command is for getting docker IP address
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
