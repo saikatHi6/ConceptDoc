@@ -16,3 +16,5 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' con
 docker container rm -f wildfly can be used to stop and remove the container in one command
 
 [Docker most used commands](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/ch04-run-container.adoc#stop-container)
+
+[Few docker concepts](https://stackoverflow.com/questions/42545431/when-to-use-docker-compose-and-when-to-use-docker-swarm)
