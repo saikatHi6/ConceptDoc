@@ -18,3 +18,6 @@ docker container rm -f wildfly can be used to stop and remove the container in o
 [Docker most used commands](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/ch04-run-container.adoc#stop-container)
 
 [Few docker concepts](https://stackoverflow.com/questions/42545431/when-to-use-docker-compose-and-when-to-use-docker-swarm)
+
+
+[Docker MySQL Commands](https://hub.docker.com/r/mysql/mysql-server/)
