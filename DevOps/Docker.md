@@ -21,3 +21,7 @@ docker container rm -f wildfly can be used to stop and remove the container in o
 
 
 [Docker MySQL Commands](https://hub.docker.com/r/mysql/mysql-server/)
+
+
+** Docker Postgres **
+docker run -p 5432:5432 --name bp_backup -e POSTGRES_PASSWORD=mysecretpassword -d postgres
