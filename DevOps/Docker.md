@@ -30,3 +30,7 @@ docker run -p 5432:5432 --name bp_backup -e POSTGRES_PASSWORD=mysecretpassword -
 Show all existing container :
 docker ps -a
 
+**windows command to build docker image**
+
+docker build -t csv-bp --file ./csv-bp.txt .
+
