@@ -28,6 +28,10 @@ Transparently overlays file and directories of separate file system to create co
     - Docker
     - Rocket(rkt)
  
+### runC
+
+It's not use demon process.
+
 ### Docker 
 
 Client communication with the Docker demon running on the Docker host with REST API. Docker introduced "containerd". Docker demon manage docker runtime
