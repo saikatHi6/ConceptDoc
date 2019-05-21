@@ -43,4 +43,24 @@ rkt has no demon process. It's works well with "systemd". Rkt currently using AC
   - rootfs : A tar file which contains all files to execute the application.
   - Image Manifest : A file which define execution paramete and resource constraints.
 
+### Docker Enviornment 
+
+Docker toolbox is use to run docker on windows and mac platform. It's comes with
+    - full vertualization environment
+    - boot2Docker virtualization
+    - Docker compose
+    - Docker Engine
+
+### Unikernal
+
+With unikernal we can build a OS Construct with minimum set of libaries to run just given application. The applcation and libery comile together to build a machine image. Which can run directly on hypervisor or baermetal. 
+
+## Containers in windows
+    - Windows server container
+          
+          Container done through namespace, cgroup like funtionality of linux kernal. Container share the kernal with host machine 
+    - Hyper-v containers
+        
+          run Wendows server containar inside the highly optimised virtual machine. do not share kernal with host machine.
+
 
