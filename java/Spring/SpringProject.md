@@ -23,3 +23,6 @@ https://dzone.com/articles/creating-a-rest-api-with-java-and-spring
 
 
 https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+
+
+https://www.callicoder.com/spring-boot-file-upload-download-rest-api-example/
