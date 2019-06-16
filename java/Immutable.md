@@ -23,5 +23,6 @@ May lead performance problem
 Enforce encapsulation
 Enforce Architechture
 
-(Ref1)[https://www.youtube.com/watch?v=ffMA1t9OiNs]
-(Ref2)[https://dzone.com/articles/immutables-in-java]
+[Ref1](https://www.youtube.com/watch?v=ffMA1t9OiNs)
+
+[Ref2](https://dzone.com/articles/immutables-in-java)
