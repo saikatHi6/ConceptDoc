@@ -9,6 +9,7 @@ This command helps to create new image from ephemeral storage.
 
 docker container diff myalpine
 
-docker container commit 
+docker container commit <CONTAINER_NAME>
+Help us to create an on-disk copy of ephemeral storage from a container.
 
-docker container push <REPO_NAME>/<IMAGE_NAME>:<IMAGE_TAG>
+docker image push <REPO_NAME>/<IMAGE_NAME>:<IMAGE_TAG>
