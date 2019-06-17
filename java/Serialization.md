@@ -14,4 +14,24 @@ The process of reading state from file to object is call deserialization. Proces
 
 ## static vs trasient
 
+Static varizbles are not part of the object state hecnce they won't participate in serialization.
+
+
 ## final vs transient
+
+final variables will be participated in serialization directly by values.
+
+## object graph in serialization
+
+Whenever we are serializing an object the set of all objects which are reachable from object will serialized automatically. This all object call object graph.
+
+Inside the serialized object all class should be implement serialized . If it is not it will throw NotSerializableException.
+
+## customized serialization
+
+If default serialization there may be a data loss of information because of transient. To recover the data loss we should implement custom serialization. We can provide customized serialization by using two methods.
+
+1) private void writeObject(ObjectOutputStream os) throws Exception : It will be executed on the time of serialization. If we want to perform any extra work we can perform inside this method.
+2) private void readObject(ObjectInputStram is) throws Exception : It will be executed on the time of Deserialization. If we want to perform extra work.
+
+<b>Note: Above methods are callback function which is call by JVM. We should implement this methods in implemented serialized class</b> 
