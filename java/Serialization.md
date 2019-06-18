@@ -35,3 +35,16 @@ If default serialization there may be a data loss of information because of tran
 2) private void readObject(ObjectInputStram is) throws Exception : It will be executed on the time of Deserialization. If we want to perform extra work.
 
 <b>Note: Above methods are callback function which is call by JVM. We should implement this methods in implemented serialized class</b> 
+
+## Serialization respect to Inheritance
+
+1) Child will be serializable if parent is serializable thogh child does not implement .
+<b> Note: Object class not implement serializable but GenricServlet implement </b>
+ ## If child implement serializable but parent not
+2) Even though parent class does't implement serializable we can serialize child class by implementing serializable on child class. During serialization JVM check child class inheriting any Non-serializable class or not. If it is then JVM ignore orginal value of parent class and store default value.
+
+3) During deserialization if parent class is not implemented serializable then JVM will call <b> Instance Control Flow </b> ( a. identification of instance member b. Execution of instance variable assignment and instanceate c. Execution of no-arg constructor
+
+4) During de-serialization JVM will throw InvalidClassException if parent non-serialized class doesn't contain no-arg constructor. 
+
+
