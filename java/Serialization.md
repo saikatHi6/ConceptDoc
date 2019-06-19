@@ -47,8 +47,8 @@ If default serialization there may be a data loss of information because of tran
 
 4) During de-serialization JVM will throw InvalidClassException if parent non-serialized class doesn't contain no-arg constructor. 
 
-(More Ref)[https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html]
+[More Ref](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html)
 
-(Serialization Filtaring)[https://docs.oracle.com/en/java/javase/11/core/serialization-filtering1.html#GUID-55BABE96-3048-4A9F-A7E6-781790FF3480]
+[Serialization Filtaring](https://docs.oracle.com/en/java/javase/11/core/serialization-filtering1.html#GUID-55BABE96-3048-4A9F-A7E6-781790FF3480)
 
 
