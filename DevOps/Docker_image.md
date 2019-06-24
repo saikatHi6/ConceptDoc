@@ -30,3 +30,15 @@ docker image push <REPO_NAME>/<IMAGE_NAME>:<IMAGE_TAG>
 
 1) CMD: It provides default to the container created by the image
 2) ENTRYPOINT: Make the container like executable. 
+
+Docker use UnionFS with CoW features to manage storage for containers and images with the help of different storage drivers like AUFS, Device-Mapper,Btfs. Docker create a emphanal storage for container. Docker uses UnionFS to overlay a base image and one or more layer to create a new container.
+
+## Docker Volume
+
+Docker provides a way to access external storage inside the container using Volumes. which is not managed by docker UnionFS.
+
+1. Container volume
+2. Volume with host mount directory
+3. Data volume container
+4. Volume Plugin
+
