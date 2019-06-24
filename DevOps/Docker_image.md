@@ -42,3 +42,4 @@ Docker provides a way to access external storage inside the container using Volu
 3. Data volume container
 4. Volume Plugin
 
+<b> Note:  Managing concurrent access to the share data is responsibility of the application which is accessing it, not docker container.</b>
