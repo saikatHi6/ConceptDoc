@@ -29,8 +29,13 @@ Scalable, High Available, High Performance.
   ### Concept referance
   
   [Redis system design | Distributed cache System design](https://www.youtube.com/watch?v=DUbEgNw-F9c)
+  
   [System Design Interview - Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA&feature=youtu.be)
+  
   [Cache algoritham way of implimentation](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
+  
   [Strategy of design cache](http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/)
+  
   [Interview Quistions](https://www.interviewbit.com/problems/design-cache/)
+  
   [Use case of Facebook ](https://www.youtube.com/watch?time_continue=813&v=UH7wkvcf0ys&feature=emb_logo)
