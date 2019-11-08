@@ -9,7 +9,7 @@ Scalable, High Available, High Performance.
 1. Dedicated cache cluster (cache service in same host server)
 2. co-located cache (cache service is in separate server)
 
-The best approach to choosing a cache host using consistent hashing. 
+## The best approach to choosing a cache host using consistent hashing. 
 
   * Cache client knows about all cache servers.
   * All cache clients should have same lists of servers.
@@ -17,3 +17,20 @@ The best approach to choosing a cache host using consistent hashing.
   * Binary search is used to identify the server.
   * Cache client uses TCP and UDP protocol to talk to servers.
   * If server is unavilable, client proceeds as through it was a cache miss.
+  
+  
+ ## Maintaining List of Cache server
+ 
+  * Everything keep in a singel host and use configaration management tools to deploy modified fiel to every service host.
+  * Use shared storage service.
+  * Use configaration service e.g. zookeper
+  
+  
+  ### Concept referance
+  
+  [Redis system design | Distributed cache System design](https://www.youtube.com/watch?v=DUbEgNw-F9c)
+  [System Design Interview - Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA&feature=youtu.be)
+  [Cache algoritham way of implimentation](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
+  [Strategy of design cache](http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/)
+  [Interview Quistions](https://www.interviewbit.com/problems/design-cache/)
+  [Use case of Facebook ](https://www.youtube.com/watch?time_continue=813&v=UH7wkvcf0ys&feature=emb_logo)
