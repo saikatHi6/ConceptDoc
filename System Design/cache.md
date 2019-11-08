@@ -26,7 +26,7 @@ Scalable, High Available, High Performance.
   * Use configaration service e.g. zookeper
   
   
-  ### Concept referance
+  ### Concept refarences
   
   [Redis system design | Distributed cache System design](https://www.youtube.com/watch?v=DUbEgNw-F9c)
   
