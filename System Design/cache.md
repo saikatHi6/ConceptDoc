@@ -38,4 +38,20 @@ Scalable, High Available, High Performance.
   
   [Interview Quistions](https://www.interviewbit.com/problems/design-cache/)
   
+  
+  ## Usecases of memcache parformance improvement in FB.
+  
+  1) Basic Problem : Crashing
+     a) Create wrapper script to restart memcached.
+     b) Fix overflow in memory counters and statistics.
+     c) Outgrowing 4 GB memory. Major change moving to 64
+     
+  Attach to the folder   
+  
+  
+  
+  
+  
+  
+  
   [Use case of Facebook ](https://www.youtube.com/watch?time_continue=813&v=UH7wkvcf0ys&feature=emb_logo)
