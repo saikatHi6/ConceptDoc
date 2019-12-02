@@ -6,4 +6,4 @@ Each threads guaranteed to correctly compute its operations in a bounded number 
 
 Some thread always make progress.
 
-[Wait-free & Lock-free]:(https://www.ibm.com/developerworks/java/library/j-jtp11234/)
+[Wait-free & Lock-free](https://www.ibm.com/developerworks/java/library/j-jtp11234/)
