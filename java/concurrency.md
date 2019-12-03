@@ -7,3 +7,10 @@ Wait-free is a stronger condition which means that every thread is guaranteed to
 If a program is lock-free, it basically means that at least one of its threads is guaranteed to make progress over an arbitrary period of time. If a program deadlocks, none of its threads (and therefore the program as a whole) cannot make progress - we can say it's not lock-free. Since lock-free programs are guaranteed to make progress, they are guaranteed to complete (assuming finite execution without exceptions).
 
 [Wait-free & Lock-free](https://www.ibm.com/developerworks/java/library/j-jtp11234/)
+
+
+https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c
+
+http://rystsov.info/2012/09/01/cas.html
+
+https://github.com/spacejam/sled
