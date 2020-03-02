@@ -61,7 +61,7 @@ we have to give directive name
 2.
 Create a constructor by injecting two classes
 a) TemplateRef which acquires <ng-template> content
-b) ViewcontainerRef which use bor add or remove elements
+b) ViewcontainerRef which use for add or remove elements
 3. 
 @Input() decorator
 directive will receive value from the components
