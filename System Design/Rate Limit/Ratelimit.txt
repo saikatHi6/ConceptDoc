@@ -1,0 +1,19 @@
+=============Rate Limit=============
+
+https://leetcode.com/discuss/interview-question/1616482/System-Design%3A-Rate-Limiter
+
+		How will you make it distributed?
+		what challenges you forsee if distributed Rate limiter is implemented.
+		Can you identify points of failures in this design.
+		Handling failure when Rate Limiter service goes down
+		Rate Limting done at other level of the OSI model
+
+
+Why Rate limiter ?
+			Its decide send request to server or not
+			its save from over use or DOS/mallasious attack
+			
+		1. Manage operational cost (Some amount of request is free. User should have subscription model if request is more than threashold amount of request)
+		2. Security (Save from automated script & Dos)
+		3. Preventing resource starvation
+		4. Controll data flow
