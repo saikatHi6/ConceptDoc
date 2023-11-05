@@ -1,6 +1,7 @@
 =============Rate Limit=============
 
 https://leetcode.com/discuss/interview-question/1616482/System-Design%3A-Rate-Limiter
+https://www.enjoyalgorithms.com/blog/design-api-rate-limiter
 
 		How will you make it distributed?
 		what challenges do you foresee if a distributed Rate limiter is implemented?
@@ -18,14 +19,36 @@ Why Rate Limiter?
 		3. Preventing resource starvation (Some amount of request is free. User should have subscription model if the request is more than threshold amount of request)
 		4. Control data flow
 
-Rate limit can be placed on the Client side, Server side(best approach to handle requests from the backend), or middleware(if we use microservice based to place in API gateway).
 
-<h1> Counters </h1>
+
+# Counters 
 	We need to use some kind of db to keep count of the request. There are 2 options Relational Database(1 request/millisecond means throughput of 1000 request/sec)/In memory cache DB(Redies:1 request/100 nanosecond Troughput: 10M request/sec ). 
 
-Leaking Bucket Algo (used by Nginx, Amazon Elastic cloud & API Gateway )
+# Non - Functional
+Rate limit can be placed on the Client side, Server side(best approach to handle requests from the backend), or middleware(if we use microservice based to place in API gateway).
+Is it Distributed?
+Performance & Cost Efficient.
 
-& Token Bucket Algo
+
+## Leaking Bucket Algo (used by Nginx, Amazon Elastic cloud & API Gateway )
+
+Pass requests through the bucket at the same rate. 
+
+
+## Token Bucket Algo
+
+Create a certain number of tokens and fill it into the bucket. Each request will pick a token and process it. The request will be canceled if tokens are not available in the bucket.
+
+## Fixed Window Algo
+
+Every minute it will process a certain amount of requests. 
+
+## Sliding Window Algo
+
+## Sliding Window Log Algo
+
+
+
 
 
 
