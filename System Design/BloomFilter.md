@@ -1,5 +1,8 @@
 Bloom Filter(Probablistic datastructure) - https://www.youtube.com/watch?v=V3pzxngeLqw&list=PLCRMIe5FDPseVvwzRiCQBmNOVUIZSSkP8&index=3 
 
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/310b0a03-624a-407c-b0aa-26f923130aaf)
+
+
 1. It helps to reduce time & space complexity to find a key that exists in the system.
 2. Its probabilistic data structure. A bloom filter would answer with either "firm no" or "probably yes"
 3. In the bloom filter "False Positive" can be possible but not "False Negative"
