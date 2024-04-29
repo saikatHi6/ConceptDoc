@@ -1,0 +1,18 @@
+Bloom Filter
+
+1. Its helps to reduce time & space complexity to find a key exist in the sytem.
+2. Its probablistic data structure. A bllom filter would answer with either "firm no" or "probably yes"
+3. In bloom filter "False Positive" can be possible but not "False Negeative"
+4. We can not remove a item from bloom filter.
+
+Real Worl Example : 
+     Many No SQL databases use to reduce the disk reads for keys that doesn't exist. LSM tree takes more time to find key in it
+     Content delivery network Akamai use bloom filters to prevent caching "one-hit-wonders".
+     Web browser like chrome use it to identify malicious URL
+     Some password validator use bloom filter to prevent users from using weak password.
+
+Properties Of Hash Functions :
+     fast
+     evenly & randomly distributed
+     collisions are ok
+     collisions should be rare
