@@ -1,4 +1,4 @@
-Bloom Filter - https://www.youtube.com/watch?v=V3pzxngeLqw&list=PLCRMIe5FDPseVvwzRiCQBmNOVUIZSSkP8&index=3 
+Bloom Filter(Probablistic datastructure) - https://www.youtube.com/watch?v=V3pzxngeLqw&list=PLCRMIe5FDPseVvwzRiCQBmNOVUIZSSkP8&index=3 
 
 1. It helps to reduce time & space complexity to find a key that exists in the system.
 2. Its probabilistic data structure. A bloom filter would answer with either "firm no" or "probably yes"
