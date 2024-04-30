@@ -22,3 +22,6 @@ Properties Of Hash Functions :
 
 https://www.youtube.com/watch?v=bgzUdBVr5tE&t=430s - Here explain the mathematical calculation for error result.
 
+Further study material - https://www.youtube.com/watch?v=hFMuWNscjyI
+
+Deletable Bloom Filter Explanation and other types of bloom filter - https://www.youtube.com/watch?v=mItewjU-YG8
