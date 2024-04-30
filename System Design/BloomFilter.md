@@ -6,7 +6,7 @@ Bloom Filter(Probablistic datastructure) - https://www.youtube.com/watch?v=V3pzx
 1. It helps to reduce time & space complexity to find a key that exists in the system.
 2. Its probabilistic data structure. A bloom filter would answer with either "firm no" or "probably yes"
 3. In the bloom filter "False Positive" can be possible but not "False Negative"
-4. We can not remove an item from the bloom filter.
+4. We can not remove an item from the bloom filter. (we can implement with different approaches like create extra bits or 2D array)
 
 Real Worl Example : 
      Many No SQL databases are used to reduce the disk reads for keys that don't exist. LSM tree takes more time to find the key in it
