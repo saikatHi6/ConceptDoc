@@ -39,9 +39,7 @@ Backlog For Bloom Filters
      How to resize a bloom filter or scale (https://gsd.di.uminho.pt/members/cbm/ps/dbloom.pdf)
      Deletable bloom filter
      counting bloom filter (https://theory.stanford.edu/~rinap/papers/esa2006b.pdf)
-
-
-
+     https://github.com/iamthebot/hyperbloom
 
 
 
