@@ -24,4 +24,24 @@ https://www.youtube.com/watch?v=bgzUdBVr5tE&t=430s - Here explain the mathematic
 
 Further study material - https://www.youtube.com/watch?v=hFMuWNscjyI
 
-Deletable Bloom Filter Explanation and other types of bloom filter - https://www.youtube.com/watch?v=mItewjU-YG8
+Deletable Bloom Filter or scale Explanation and other types of bloom filter - https://www.youtube.com/watch?v=mItewjU-YG8
+
+Bloom Filter Calculator - https://hur.st/bloomfilter/
+
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/6d1585bf-ae76-4dc1-b733-006c2a483f30)
+
+
+Implimentation : [https://replit.com/@saikatsadhukha1/Python#main.py](https://replit.com/@saikatsadhukha1/BloomFilter#main.py)
+
+https://systemdesign.one/bloom-filters-explained/
+
+Backlog For Bloom Filters
+     How to resize a bloom filter or scale (https://gsd.di.uminho.pt/members/cbm/ps/dbloom.pdf)
+     Deletable bloom filter
+     counting bloom filter (https://theory.stanford.edu/~rinap/papers/esa2006b.pdf)
+
+
+
+
+
+
