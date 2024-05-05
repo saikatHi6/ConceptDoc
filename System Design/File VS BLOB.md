@@ -5,6 +5,6 @@ To store a image or any file why we sould use File not Database BLOB?
   4. Access Control : This is alos not important and it can be handled in a file management.
 
 Advantages of Using File
-  Cheaper
-  Faster
-  CDN first access
+  - Cheaper
+  - Faster
+  - CDN first access
