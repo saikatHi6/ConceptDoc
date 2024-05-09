@@ -15,3 +15,10 @@ To guard against frame accuracy issues that may have been introduced by incorrec
 3. Parallel Video Encoding
    At Netflix we stream to a heterogenous set of viewing devices. This requires a number of codec profiles: VC1, H.264/AVC Baseline, H.264/AVC Main and HEVC. We also support varying bandwidth scenarios for our members, all the way from sub-0.5 Mbps cellular to 100+ Mbps high-speed Internet. To deliver the best experience, we generate multiple quality representations at different bitrates (ranging from 100 kbps to 16 Mbps) and the Netflix client adaptively selects the optimal stream given the instantaneous bandwidth.
      ![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/a9bb2cbd-2855-4757-866c-d28bc6630cb2)
+
+
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/2ef38cd6-e3bc-4cd0-90cf-b0fa7ce7107f)
+
+	https://netflixtechblog.com/keystone-real-time-stream-processing-platform-a3ee651812a
+	https://netflixtechblog.com/tagged/video-encoding
+	https://netflixtechblog.com/optimized-shot-based-encodes-now-streaming-4b9464204830
