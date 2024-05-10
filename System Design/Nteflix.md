@@ -31,3 +31,4 @@ This post discussed how stored customer view data (https://netflixtechblog.com/s
 	- Compressed or Archival Viewing History (CompressedVH): Large number of older viewing records with rare updates. The data is compressed to reduce storage footprint. Compressed viewing history is stored in a single column per row key.
 
  
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/0542b43a-f9e6-49e0-948c-7c58914c1416)
