@@ -32,3 +32,5 @@ This post discussed how stored customer view data (https://netflixtechblog.com/s
 
  
 ![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/0542b43a-f9e6-49e0-948c-7c58914c1416)
+
+Used SSD instead of RAM (https://netflixtechblog.com/evolution-of-application-data-caching-from-ram-to-ssd-a33d6fa7a690)
