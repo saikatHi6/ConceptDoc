@@ -22,3 +22,12 @@ To guard against frame accuracy issues that may have been introduced by incorrec
 	https://netflixtechblog.com/keystone-real-time-stream-processing-platform-a3ee651812a
 	https://netflixtechblog.com/tagged/video-encoding
 	https://netflixtechblog.com/optimized-shot-based-encodes-now-streaming-4b9464204830
+
+This post discussed how stored customer view data (https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
+
+	To resolve this they have used Casandra DB because Casandra is write heavy database. In this scenario read/write ratio is 9:1. Also Casandra is good options to store multiple columns for different rows. Later to scale their system they used EVCache. Also, they split it into multiple clusters and sharded it by customerId.  
+ 	In the lates design they split there viewing record data into 2 types Live or Recent Viewing History (LiveVH) and Compressed or Archival Viewing History (CompressedVH)
+  	- Live or Recent Viewing History (LiveVH): Small number of recent viewing records with frequent updates. The data is stored in uncompressed form as in the simple design detailed above.
+	- Compressed or Archival Viewing History (CompressedVH): Large number of older viewing records with rare updates. The data is compressed to reduce storage footprint. Compressed viewing history is stored in a single column per row key.
+
+ 
