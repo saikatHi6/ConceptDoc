@@ -56,6 +56,8 @@ Scalable, High Available, High Performance.
   [Strategy of design cache](http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/)
   
   [Interview Quistions](https://www.interviewbit.com/problems/design-cache/)
+
+  [What are Distributed CACHES and how do they manage DATA CONSISTENCY?](https://www.youtube.com/watch?v=U3RkDLtS7uY&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=11)
   
   
   ## Usecases of memcache parformance improvement in FB.
