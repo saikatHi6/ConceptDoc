@@ -1,5 +1,16 @@
 ## Why Caching? 
 To scale the system. This component lies between the Web server and the database server.
+  1. To Avoid network call
+  2. To Avoid computation
+  3. Reduced DB load
+
+## Cache Policy
+   The main idea is data loading into the cache and evicted from the cache.
+Type of caches:
+   1. LRU
+   2. LFU
+   3. Sliding Window base cache
+   
 
 ## Distributed Caching:
 
@@ -8,6 +19,14 @@ Scalable, High Available, High Performance.
 ## Types of distributed cache 
 1. Dedicated cache cluster (cache service in same host server)
 2. co-located cache (cache service is in separate server)
+
+   ![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/7541be30-c972-4de2-8118-7f89c8cf0ddc)
+
+## Cache Write policies
+   1. Write Through
+   2. Write Back
+   
+
 
 ## The best approach to choosing a cache host using consistent hashing. 
 
@@ -48,7 +67,9 @@ Scalable, High Available, High Performance.
      
   Attach to the folder   
   
+
   
+
   
   
   
