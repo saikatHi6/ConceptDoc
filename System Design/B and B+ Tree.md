@@ -69,6 +69,11 @@ Cp = Child Pointer
 Rp = Record Pointer
 
 
+The problem with creating an M-Way search tree is the number of trees will increase then searching will be time-consuming. To overcome this issue introduced B-Trees basically its M-way search tree only with some specific rules.
+
+<img width="170" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/0deca95c-c6a0-4548-b1cc-46dd5e29fe32">
+
+
   9. B-Trees
   10. Insertion & Deletion of B tree
   11. B+ Tree
