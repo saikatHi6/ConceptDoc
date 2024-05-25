@@ -42,10 +42,28 @@ So to search a row in the disk we have to go through a minimum of 5 blocks(4 ind
 <img width="302" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/f2c5bb48-ee76-4e2c-9ce6-56806363a704">
 
 When index size grows then we can create an index of index. It will reduce the number of block accesses to find a record.
+On the upper level, we can store a collection of index addresses in an index then number of block size will be eventually reduced.
 
-  7. M-Way search tree
-  8. B-Trees
-  9. Insertion & Deletion of B tree
-  10. B+ Tree
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/5ff38fe8-199c-4d49-b18d-f820fb8a319e)
+
+
+![image](https://github.com/saikatHi6/ConceptDoc/assets/4381376/85baf16b-62d5-42cb-9b7c-e54c0221ec75)
+
+
+  7. M-Way search tree: Self manages multi-level indexing.
+     <img width="392" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/c361fdbb-4cde-45c1-bd68-743de65fa68c">
+
+In the above diagram, M-way search key should have M-1 key
+
+<img width="361" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/d868ec60-a3b2-44e7-9e19-871c2e9518b5">
+
+K = Key
+Cp = Child Pointer
+Rp = Record Pointer
+
+
+  9. B-Trees
+  10. Insertion & Deletion of B tree
+  11. B+ Tree
 
 
