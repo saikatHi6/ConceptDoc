@@ -20,19 +20,32 @@ Block addresses are represented by Sector & Track.
 
 let's assume the block size is 512 bytes. Each byte has an address called offset.
 
-
-
-  2. How Datastore on the disk
-
      <img width="353" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/a6028bc0-4b03-4783-8918-ca0584f83056">
 
-In this image shown how data is read from DBMS and stored in the RAM using Data structure for read and write.
+This image shows how data is read from DBMS and stored in the RAM using Data structure for read and write.
 
-  4. What is indexing
-  5. What is multi level indexing
-  6. M-Way search tree
-  7. B-Trees
-  8. Insertion & Deletion of B tree
-  9. B+ Tree
+  2. How Datastore on the disk
+     This image depicts each row size as 128 Bytes. Then 4 rows can be stored in each block. This means to search a  row from the disk we have to search in 25 blocks. 
+<img width="381" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/59bce826-72e9-4347-b501-748a81e2cee0">
+
+  3. What is indexing
+Now to reduce the access of block size implement indexs.
+<img width="277" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/cf7b3ab3-639c-4a49-b26a-7c1e7f9f6bab">
+
+Let's assume the highlighted yellow part is data and the green is an index.
+Each block can store 32 rows of index. With that calculation, we can calculate the maximum 3+ blocks required to store 100 index rows. 
+
+So to search a row in the disk we have to go through a minimum of 5 blocks(4 index blocks + 1 data block).
+
+  5. What is multi-level indexing
+
+<img width="302" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/f2c5bb48-ee76-4e2c-9ce6-56806363a704">
+
+When index size grows then we can create an index of index. It will reduce the number of block accesses to find a record.
+
+  7. M-Way search tree
+  8. B-Trees
+  9. Insertion & Deletion of B tree
+  10. B+ Tree
 
 
