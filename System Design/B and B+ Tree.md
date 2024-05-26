@@ -75,6 +75,8 @@ The problem with creating an M-Way search tree is the number of trees will incre
 
 
   9. B-Trees
+
+
 A B-tree is a self-balancing search tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. It is commonly used in databases and file systems. Here are the key characteristics of a B-tree:
 
 1. **Balanced Tree**: A B-tree is always balanced, meaning all leaf nodes are at the same depth, which ensures consistent access times.
@@ -105,7 +107,5 @@ A B-tree is a self-balancing search tree data structure that maintains sorted da
 
 Overall, B-trees are highly efficient for storage systems, providing a good balance between read/write performance and space utilization.
 
-  11. Insertion & Deletion of B tree
-  12. B+ Tree
 
 
