@@ -85,7 +85,7 @@ A B-tree is a self-balancing search tree data structure that maintains sorted da
 
 3. **Order**: A B-tree of order \( m \) (or degree \( m \)) has the following properties:
    - Each internal node can have at most \( m \) children.
-   - Each internal node (except the root) has at least \(\lceil m/2 \rceil\) children.
+   - Each internal node (except the root) has at least \(\lceil m/2 \rceil\) children.[You will be allowed to create the next node until the current node is filled with at least half of the degree meaning m/2. m is degree]
    - The root has at least two children if it is not a leaf node.
    - Each node can contain at most \( m-1 \) keys and at least \(\lceil m/2 \rceil - 1\) keys (except for the root, which can have fewer).
 
