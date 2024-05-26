@@ -75,7 +75,9 @@ The problem with creating an M-Way search tree is the number of trees will incre
 
 
   9. B-Trees
-  10. Insertion & Deletion of B tree
-  11. B+ Tree
+<img width="562" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/637f1bad-a2c8-4daf-8da2-6b612961ef6c">
+
+  11. Insertion & Deletion of B tree
+  12. B+ Tree
 
 
