@@ -75,7 +75,35 @@ The problem with creating an M-Way search tree is the number of trees will incre
 
 
   9. B-Trees
-<img width="562" alt="image" src="https://github.com/saikatHi6/ConceptDoc/assets/4381376/637f1bad-a2c8-4daf-8da2-6b612961ef6c">
+A B-tree is a self-balancing search tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. It is commonly used in databases and file systems. Here are the key characteristics of a B-tree:
+
+1. **Balanced Tree**: A B-tree is always balanced, meaning all leaf nodes are at the same depth, which ensures consistent access times.
+
+2. **Multiple Children**: Each node can have multiple children, which makes B-trees suitable for storage systems that read and write large blocks of data.
+
+3. **Order**: A B-tree of order \( m \) (or degree \( m \)) has the following properties:
+   - Each internal node can have at most \( m \) children.
+   - Each internal node (except the root) has at least \(\lceil m/2 \rceil\) children.
+   - The root has at least two children if it is not a leaf node.
+   - Each node can contain at most \( m-1 \) keys and at least \(\lceil m/2 \rceil - 1\) keys (except for the root, which can have fewer).
+
+4. **Node Structure**: Each node in a B-tree contains:
+   - Keys: Sorted within the node.
+   - Children: Pointers to child nodes.
+   - Optional Data: Pointers or references to data records associated with keys (common in B+ trees).
+
+5. **Efficient Operations**: 
+   - **Search**: Starts at the root and traverses down the tree, making a decision at each node based on the keys, achieving logarithmic time complexity.
+   - **Insertion**: Ensures the tree remains balanced by splitting nodes that exceed the maximum number of keys.
+   - **Deletion**: Ensures balance by merging nodes or redistributing keys as necessary.
+
+6. **Space Utilization**: B-trees are designed to optimize disk reads and writes, which is why they allow for a large number of keys per node. This minimizes the height of the tree and reduces the number of disk accesses required.
+
+7. **Sequential Access**: In-order traversal of a B-tree yields the keys in sorted order, which is beneficial for range queries.
+
+8. **B+ Trees**: A variant of B-trees where all data is stored in the leaf nodes, and internal nodes only store keys. This allows for efficient range queries and sequential access.
+
+Overall, B-trees are highly efficient for storage systems, providing a good balance between read/write performance and space utilization.
 
   11. Insertion & Deletion of B tree
   12. B+ Tree
