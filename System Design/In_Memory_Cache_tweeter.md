@@ -38,4 +38,22 @@
 
 
 ### Compared to CDN caching in-memory caching usually has a lower miss ratio.
+
+### Measuring all Twemcache workloads, we observe that the majority of the cache workloads still follow Zipfian distribution.
+
+## Findings
+  - write-heavy workloads usually use short TTLs
+
+
+## Eviction algorithm candidates
+
+    - Object LRU and object FIFO LRU and FIFO are the most common algorithms used in production caching systems
+    - slabLRU and slabLRC These two algorithms are part of eviction algorithms offered in Twemcache. slabLRU and slabLRC are equivalent to LRU and FIFO but executed at a level much coarser granularity of slabs rather than a single object
+    - Random slab eviction Besides slabLRU and slabLRC, Twemcache also offers Random slab eviction, which globally picks a random slab to evict
+    - Memcached-LRU Memcached adapted LRU by creating one LRU queue per slab class. We call the resulted eviction algorithm Memcached-LRU, which does not enable Memcached’s slab auto-move functionality. 
+
+
+### open-source simulator called libCacheSim to study the steady-state miss ratio of the different eviction algorithms. 
+    
+  
     
