@@ -55,5 +55,9 @@
 
 ### open-source simulator called libCacheSim to study the steady-state miss ratio of the different eviction algorithms. 
     
-  
-    
+  ![image](https://github.com/user-attachments/assets/7cbdb26f-2d5e-4346-8749-afa88e75c981)
+
+
+
+1. The second type of result shows that for some workloads LRU works better than others. Such a result is often expected because LRU protects recently accessed objects and is wellknown for its miss ratio performance in workloads with strong temporal locality.
+2. 
