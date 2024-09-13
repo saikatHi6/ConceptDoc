@@ -59,5 +59,25 @@
 
 
 
-1. The second type of result shows that for some workloads LRU works better than others. Such a result is often expected because LRU protects recently accessed objects and is wellknown for its miss ratio performance in workloads with strong temporal locality.
-2. 
+1. The second type of result shows that for some workloads LRU works better than others. Such a result is often expected because LRU protects recently accessed objects and is well known for its miss ratio performance in workloads with strong temporal locality.
+
+### Miss Ratio comparison 
+1. Twemcache uses random slab eviction by default because random eviction is simple and requires less metadata.
+2. The second type of result shows that for some workloads LRU works better than others. Such a result is often expected because LRU protects recently accessed objects and is well known for its miss ratio performance in workloads with strong temporal locality. For workloads with inter-arrival time like Figure 14a, LRU can work better than FIFO because it promotes recently accessed objects, which have a higher chance of being reused soon. 
+3. The third type of result shows that FIFO is the best eviction algorithm, such as CDN caching. FIFO can perform better than LRU. Such workloads may include scan type of requests such as a service that periodically sends emails.
+4. The last type of result show that in some workloads, slabLRU performs much better than any other algorithms.
+
+- We see that at the large cache size slabLRU is the best for around 10% of workloads, and this fraction gradually increases as we reduce cache size. 
+- only at very small cache sizes, LRU becomes significantly better than FIFO.
+
+** Write-heavy workloads in caching systems usually have lower throughput and higher latency, because the write path usually involves more work and can trigger more expensive events such as eviction.
+write-heavy workloads have shorter TTLs with less skewed popularity, which are in sharp contrast to read-heavy workloads.
+
+
+### Short TTLs
+
+1. Transient object cache:  An approach employed for proactive expiration (especially for handling short TTLs), proposed in the context of in-memory caches at Facebook [59], is to use a separate memory pool (called transient object pool) to store short-lived objects. The transient object cache consists of a circular buffer of size t with the element at index i being a linked list storing objects expiring after i seconds. Every second, all objects in the first linked list expire and are removed from the cache, then all other linked lists advance by one.
+2. Background crawler: Another approach for proactive expiration, which is employed in Memcached, is to use a background crawler that proactively removes expired objects by scanning all stored objects.
+
+
+**File system caching is different from distributed in-memory caches due to a variety of reasons. , file system caches usually stores objects of fixed-sized chunks (512 bytes, 4 KB or larger), while in-memory caches store objects of a much wider range (Section 4.6), and scan is common in file systems, while rare in in-memory caches.**
