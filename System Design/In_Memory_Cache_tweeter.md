@@ -1,5 +1,5 @@
 
-## Twitter deploys the cache environment as a single tenant & single layer cache.
+## Twitter deploys the cache environment as a single tenant & single layer cache.[https://www.usenix.org/conference/osdi20/presentation/yang]
 
 ## Findings from the research of 153 Twemcache clusters on Twitter
 
