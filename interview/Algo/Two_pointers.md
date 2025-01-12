@@ -6,7 +6,7 @@
 6. Given an array arr of unsorted numbers and a target sum, count all triplets in it such that arr[i] + arr[j] + arr[k] < target where i, j, and k are three different indices. Write a function to return the count of such triplets : This is similar to the target sum only. We have to keep track of a lesser sum from the target. The only difference we can take the count of the entire (end - start) where the sum of 2 starts & ends is equal to the third number.
 7. Given an array with positive numbers and a positive target number, find all of its contiguous subarrays whose product is less than the target number. : It's similar to the above problems. We can take 2 pointers and start doing product. Here we have to start with the initial index and next to the initial index. First Product initializes with 1. Then start multiplying. If it's more than target then we have to reduce it from the start like the sliding window. Also while creating a list of substrings use LinkedList and add the number in 0th index.
 8. Given an array containing 0s, 1s and 2s, sort the array in-place. You should treat the numbers of the array as objects, hence, we can’t count 0s, 1s, and 2s to recreate the array. : Take 2 pointers from start & end. Will start iterating from the front. Put three conditions for 0,1,2. If 1 then increase the index. If 0 then swap with start index. start++ and increase index. else swap with end index.
-9.  Given an array of unsorted numbers and a target number, find all unique quadruplets in it, whose sum is equal to the target number.: Its similar to sum of target values. The only thing is to create a unique list we have to skip similar numbers. We can start by taking the first element and the next elements.        for (int i = 0; i < arr.length - 3; i++) {
+9.  Given an array of unsorted numbers and a target number, find all unique quadruplets in it, whose sum is equal to the target number.: Its similar to sum of target values. The only thing is to create a unique list we have to skip similar numbers. We can start by taking the first element and the next elements.        ``` for (int i = 0; i < arr.length - 3; i++) {
       if (i > 0 && arr[i] == arr[i - 1]) // skip same element to avoid duplicate quadruplets
         continue;
       for (int j = i + 1; j < arr.length - 2; j++) {
@@ -14,6 +14,6 @@
           continue;
         searchPairs(arr, target, i, j, quadruplets);
       }
-    }
+    } ```
 10. Given two strings containing backspaces (identified by the character ‘#’), check if the two strings are equal.: Start from end take 2 pointers for 2 strings. Write a method that will return the valid index. Pass each index and compare for both strings. If both string reaches to index 0 that means same else false.
 11. Given an array, find the length of the smallest subarray in it which when sorted will sort the whole array. : Take 2 pointers from start and end. Find the unsorted index from start and end. Then find the max and min value of the subarray. Then check from the start and compare with the min value of the sub-array and similarly do from the end with max value.    
