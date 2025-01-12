@@ -15,7 +15,6 @@
           continue;
         searchPairs(arr, target, i, j, quadruplets);
       }
-    }
- ```
+    }```
 11. Given two strings containing backspaces (identified by the character ‘#’), check if the two strings are equal.: Start from end take 2 pointers for 2 strings. Write a method that will return the valid index. Pass each index and compare for both strings. If both string reaches to index 0 that means same else false.
 12. Given an array, find the length of the smallest subarray in it which when sorted will sort the whole array. : Take 2 pointers from start and end. Find the unsorted index from start and end. Then find the max and min value of the subarray. Then check from the start and compare with the min value of the sub-array and similarly do from the end with max value.    
