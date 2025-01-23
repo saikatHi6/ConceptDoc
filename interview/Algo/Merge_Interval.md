@@ -1,0 +1,23 @@
+- Merge all the overlapping intervals to produce a list that has only mutually exclusive intervals:
+  
+  - Most of the time it time complexity O(nlogn)
+  - It is better to sort all intervals by start time or first elements of the array.
+  - Mostly we have to look into below 6 conditions.
+            ![image](https://github.com/user-attachments/assets/2de6d397-158a-44ed-92aa-8f0cd109e2a4)
+   - Check if the time overlapped or not. Not overlap condition is a.startTime<=b.endTime
+   - If overlapp then merge the inteval. 
+- Insert a given interval at the correct position and merge all necessary intervals to produce a list that only has mutually exclusive intervals.
+   - It is the same as above only thing is that it is a sorted array so we can iterate through and find the exact position to insert basically sorted position.
+   - If we find that the new interval's start time is greater than all start times, insert at last.
+   - Rest same as above
+- Find the intersection of these two lists. Each list consists of disjoint intervals sorted by their start time.
+   - Iterate both the Intervals. To iterate take 2 pointers.
+   - If the start is smaller or equal to the other start and the start is less than equal to the end that means it is overlapped.
+   - If overlap find max of start and min of end
+   - create a new interval and add it to the new merged list.
+   - If the end is less than the other end increase the counter.
+   - If the start is greater than another start then increase the counter.
+- Given an array of intervals representing ‘N’ appointments, find out if a person can attend all the appointments.
+- Given a list of intervals representing the start and end time of ‘N’ meetings, find the minimum number of rooms required to hold all the meetings.
+- We are given a list of Jobs. Each job has a Start time, an End time, and a CPU load when it is running. Our goal is to find the maximum CPU load at any time if all the jobs are running on the same machine.
+- For ‘K’ employees, we are given a list of intervals representing the working hours of each employee. Our goal is to find out if there is a free interval that is common to all employees. You can assume that each list of employee working hours is sorted on the start time.         
