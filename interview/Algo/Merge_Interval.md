@@ -18,6 +18,25 @@
    - If the end is less than the other end increase the counter.
    - If the start is greater than another start then increase the counter.
 - Given an array of intervals representing ‘N’ appointments, find out if a person can attend all the appointments.
+   - It is similar to the first problem merge interval. Instead of merging, we can have a boolean value
+   - If overlaps then set it to false else return true
+     Similar Problem Statement: Given a list of appointments, find all the conflicting appointments.
 - Given a list of intervals representing the start and end time of ‘N’ meetings, find the minimum number of rooms required to hold all the meetings.
+   - Sort by start time
+   - Use a min heap which will be used to track the active meetings. Min heap will be used for tracking active meetings with the smallest end time.
+   - Iterate over all meetings
+   - If any meetings are in the heap. then check if the meeting end time is less than the current meeting's start time. If yes remove from heap.
+   - Add the current meeting to the mean heap.
+   -  We will take an int variable to track the maximum number of meeting rooms required. Any time maximum mean heap size will be the number of rooms required. 
 - We are given a list of Jobs. Each job has a Start time, an End time, and a CPU load when it is running. Our goal is to find the maximum CPU load at any time if all the jobs are running on the same machine.
-- For ‘K’ employees, we are given a list of intervals representing the working hours of each employee. Our goal is to find out if there is a free interval that is common to all employees. You can assume that each list of employee working hours is sorted on the start time.         
+   - It is similar to the above only we have to add CPU load time and check when it's maximum.
+- For ‘K’ employees, we are given a list of intervals representing the working hours of each employee. Our goal is to find out if there is a free interval that is common to all employees. You can assume that each list of employee working hours is sorted on the start time.
+   -    This problem is a bit tricky. We need two classes. One for interval another for tracking employee interval, employee index, and interval index.
+   -    Here we will track the employee start interval in a min-heap.
+   -    Will take a for loop and iterate over all the employee's interval index-wise.
+   -    Iterate over all the intervales present in the heap.
+   -    If no overlap between the current interval and the previous interval then add in the final result. The condition is previous.end< current.start.
+   -    Update the previous interval with the current interval.
+   -    Else If previous.end<current.end then update the previous interval with the current interval.
+   -    Then fetch intervals for the next employee from the list.
+   -    If the size of the interval list is greater than the current index then add to the min heap.
