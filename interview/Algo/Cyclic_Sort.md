@@ -4,8 +4,20 @@ Write a function to sort the objects in-place on their creation sequence number 
   - If yes increment the counter
   - Else swap the index with the value of the index number.
 - We are given an array containing n distinct numbers taken from the range 0 to n. Since the array has only n numbers out of the total n+1 numbers, find the missing number.
+   - Iterate over the array and put a condition if the value of the index is less than the length of the array and the array value is not equal to the value of the fetched value index. if(array[i]<arr.length && array[i] != arry[array[i]])
+   - swap with the value of the index array and the value of the value index array
+   - if matches then increase the counter
+   - Then iterate through the array and find if the index is not matched with the value of the index-1.
 - We are given an unsorted array containing numbers taken from the range 1 to ‘n’. The array can have duplicates, which means some numbers will be missing. Find all those missing numbers.
+    - It is similar to the above only changes is at the end of the sorting we have to iterate and store all missing numbers in the list.
 - We are given an unsorted array containing ‘n+1’ numbers taken from the range 1 to ‘n’. The array has only one duplicate but it can be repeated multiple times. Find that duplicate number without using any extra space. You are, however, allowed to modify the input array.
+    - Iterate over the array
+    - Check index is similar to the value of index -1. if (nums[i] != nums[i]-1)
+    - If the above condition satisfies then check if the value of index is not equal to the value of the value index -1. if(array[i] != arry[array[i]])
+    - if yes then swap
+    - else return the value
+    - else increase the counter
+    - **Now this can be done in place means without changing the array using 2 pointers. We have to first find the length of the cycle. It looks like a circular linked list because of only one duplicate number. Then we have to use an increased second pointer by adding the length of the  cycle. Finall,y we can return the number.**
 - We are given an unsorted array containing n numbers taken from the range 1 to n. The array has some numbers appearing twice, find all these duplicate numbers using constant space.
 - We are given an unsorted array containing ‘n’ numbers taken from the range 1 to ‘n’. The array originally contained all the numbers from 1 to ‘n’, but due to a data error, one of the numbers got duplicated which also resulted in one number going missing. Find both these numbers.
 - Given an unsorted array containing numbers, find the smallest missing positive number in it.
