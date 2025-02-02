@@ -19,9 +19,17 @@
    - return head
 
 - Reverse the first ‘k’ elements of a given LinkedList.
+   - It is similar to the above. Write a function that can be passed starting, ending index and head.
+   - Then pass 0 and k as an index.
 - Given a LinkedList with ‘n’ nodes, reverse it based on its size in the following way:
    - If ‘n’ is even, reverse the list in a group of n/2 nodes.
-   - If n is odd, keep the middle node as it is, reverse the first ‘n/2’ nodes and reverse the last ‘n/2’ nodes.
+   - If n is odd, keep the middle node as it is, reverse the first ‘n/2’ nodes, and reverse the last ‘n/2’ nodes.
+
+     - This is also similar to the above. Write a function that can pass the start and end index and the head.
+     - if n is even then reverse(1,n/2,head) and reverse(n/2+1,n,head)
+     - if n is odd then reverse(1,n/2,head) and reverse(n/2+2,n,head)
+    
+       
 - Given the head of a LinkedList and a number ‘k’, reverse every ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
 - Given the head of a LinkedList and a number ‘k’, reverse every alternating ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
 - Given the head of a LinkedList and a number ‘k’, reverse every alternating ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
