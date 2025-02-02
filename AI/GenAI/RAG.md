@@ -30,4 +30,12 @@ Once the initial list of potential hits is retrieved, the second stage of the pr
 
 
 
-RAG With Different Implementation : https://medium.com/@devmallyakarar/rag-retrieval-augmented-generation-in-depth-with-code-implementation-using-langchain-llamaindex-1f77d1ca2d33
+RAG With Different Implementation : 
+
+- https://medium.com/@devmallyakarar/rag-retrieval-augmented-generation-in-depth-with-code-implementation-using-langchain-llamaindex-1f77d1ca2d33
+- https://www.linkedin.com/pulse/agentic-rag-using-crewai-langchain-pavan-belagatti-ewwsc/
+- https://python.langchain.com/docs/tutorials/rag/
+- https://www.youtube.com/watch?v=pdnT3yLk70c
+- https://medium.com/@sulaiman.shamasna/rag-iv-agentic-rag-with-llamaindex-b3d80e09eae3
+
+
