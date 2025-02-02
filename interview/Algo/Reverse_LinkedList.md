@@ -31,5 +31,23 @@
     
        
 - Given the head of a LinkedList and a number ‘k’, reverse every ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
+   We have to follow the same as above only thing is we have to reverse k elements until current is null.
+    - Assign cur is head and prev is null. cur = head and prev = null.
+    - Start with an infinity loop. while(true)
+    - lastNodeOfFirstPart will assign with prev and lastNodeOfSubstring equal to cur. lastNodeOfFirstPart=prev & lastNodeOfSubstring=cur
+    - reverse the till k elements. Using for loop will reverse it till k.
+    - If lastNodeOfSubstring.next is not null then lastNodeOfSubstring.next = prev. To connect with the previous part
+    - Else head = prev. Means it's the last node.
+    - lastNodeOfSubstring.next = cur. To connect with the next part
+    - Break if cur = null
 - Given the head of a LinkedList and a number ‘k’, reverse every alternating ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
-- Given the head of a LinkedList and a number ‘k’, reverse every alternating ‘k’ sized sub-list starting from the head. If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
+    - This problem is similar to the above. Only we have to skip the list for the next k elements.
+- Rotate a LinkedList. Given the head of a Singly LinkedList and a number ‘k’, rotate the LinkedList to the right by ‘k’ nodes.
+   ![image](https://github.com/user-attachments/assets/dff27d2a-1ab8-451d-9303-40504cb6fa75)
+
+   - Find the length of the linked list.
+   - Then in the last insert the head of the list.
+   - Do a mod length with k. means k = len%k
+   - Skip K elements and put the head on the K+1
+   - Now prev will point to the kth element. So prev.next update with null
+
