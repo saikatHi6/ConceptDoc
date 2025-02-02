@@ -27,3 +27,7 @@ Once the initial list of potential hits is retrieved, the second stage of the pr
 
         - **Re-Ranking:** A cross-encoder is employed to re-evaluate the relevance of each candidate document to the search query. Unlike the bi-encoder used for dense retrieval, a cross-encoder takes the pair of the query and each individual document as input and outputs a relevance score. This model is more computationally intensive because it performs a deeper analysis of the interaction between the query and document content, considering the nuances of their relationship.
         - **Scoring and Ranking:** The cross-encoder scores each document for its relevance to the query. These scores are then used to sort the documents, resulting in a ranked list where the most relevant documents appear first. This refined list significantly improves the quality of the results that will be presented to the user.
+
+
+
+RAG With Different Implementation : https://medium.com/@devmallyakarar/rag-retrieval-augmented-generation-in-depth-with-code-implementation-using-langchain-llamaindex-1f77d1ca2d33
