@@ -23,6 +23,10 @@
     - if isReverse then add front index. list.add(0,curNodeVal)
     - else add list.add(curNodeVal)
  - Given a binary tree, populate an array to represent the averages of all of its levels.
+    - Steps will be the same as 1st
+    - instead of a list take an int value which calculates the sum of each level
+    - sum divided by q size end of all nodes value in the level
+    - add that in the final list
  - Find the minimum depth of a binary tree. The minimum depth is the number of nodes along the shortest path from the root node to the nearest leaf node.
  - Given a binary tree and a node, find the level order successor of the given node in the tree. The level order successor is the node that appears right after the given node in the level order traversal.
  - Given a binary tree, connect each node with its level order successor. The last node of each level should point to a null node.
