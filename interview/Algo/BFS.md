@@ -14,11 +14,14 @@
     
  - Given a binary tree, populate an array to represent its level-by-level traversal in reverse order, i.e., the lowest level comes first. You should populate the values of all nodes in each level from left to right in separate sub-arrays.
     - Steps will be the same as above
+    - Instead of a list of numbers, take a linked list. to add values from the front.
+    - if isReverse then add front index. list.add(0,curNodeVal)
+ - Given a binary tree, populate an array to represent its zigzag level order traversal. You should populate the values of all nodes of the first level from left to right, then right to left for the next level and keep alternating in the same manner for the following levels.
+    - Steps will be the same as above
     - Only take a boolean is reverse or not initialize with true
     - Instead of a list of numbers, take a linked list. to add values from the front.
     - if isReverse then add front index. list.add(0,curNodeVal)
     - else add list.add(curNodeVal)
- - Given a binary tree, populate an array to represent its zigzag level order traversal. You should populate the values of all nodes of the first level from left to right, then right to left for the next level and keep alternating in the same manner for the following levels.
  - Given a binary tree, populate an array to represent the averages of all of its levels.
  - Find the minimum depth of a binary tree. The minimum depth is the number of nodes along the shortest path from the root node to the nearest leaf node.
  - Given a binary tree and a node, find the level order successor of the given node in the tree. The level order successor is the node that appears right after the given node in the level order traversal.
