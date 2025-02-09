@@ -28,9 +28,29 @@
     - sum divided by q size end of all nodes value in the level
     - add that in the final list
  - Find the minimum depth of a binary tree. The minimum depth is the number of nodes along the shortest path from the root node to the nearest leaf node.
+    - similar to the first only
+    - we have to take a counter which will be used to calculate the current depth. the counter will be increased by one inside while loop.
+    - inside the loop, we have to put a condition that depth will be returned if both left and right nodes are empty.
+    - Note: to find the max, we must iterate over all the nodes and finally return the depth.
  - Given a binary tree and a node, find the level order successor of the given node in the tree. The level order successor is the node that appears right after the given node in the level order traversal.
+    - Take a boolean flag false. update once find the successor
+    - This is also the same as above but no need to traverse for loop in each level.
+    - if the find successor is true then return the current value
+    - every iteration first checks current node value is equal to the provided successor
+    - if yes we will update it to find the successor's true
  - Given a binary tree, connect each node with its level order successor. The last node of each level should point to a null node.
+    - It is the same as the first problem
+    - we have to take the next node inside the TreeNode
+    - we have to take another TreeNode variable which will be used to track the previous Node
+    - if the previous node is not null then update previousNode.next =cur
+    - end of the for loop update previousNode=cur
+    - previous will be initiated null after each while iteration
  - Given a binary tree, connect each node with its level order successor. The last node of each level should point to the first node of the next level.
+    - It is the same as above
+    - No need to iterate over for loop will be updated the previous without checking its last node of level or not.
  - Given a binary tree, return an array containing nodes in its right view. The right view of a binary tree is the set of nodes visible when the tree is seen from the right side.
+    - This is also the same as the first problem
+    - Only we have to take a list
+    - last iteration of for loop value will be update to the list
 
 
