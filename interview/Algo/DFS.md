@@ -31,3 +31,11 @@
     - calculate path sum. pathSum = 10*pathSum+root.val
     - if the leaf node returns pathSum
     - call the same method once with the left node and right node with path sum. then the sum of both. return findRootToLeafPathNumbers(currentNode.left, pathSum) + findRootToLeafPathNumbers(currentNode.right, pathSum);
+
+- Given a binary tree and a number sequence, find if the sequence is present as a root-to-leaf path in the given tree.
+   - Here also we have to iterate through all nodes in the tree and return true once all the elements.
+   - So we will return null and pass 3 elements one root node and another index which will be used to fetch value from the sequence list, also pass the sequence list.
+   - Add base condition if root is null return false
+   - Another base condition is if the index is greater than the seq array size or the seq of the index value is not equals to the root of val then return false. if (sequenceIndex >= sequence.length || currentNode.val != sequence[sequenceIndex])
+   - If the leaf node then returns true
+   - call the same method once with the left node and another time with the right node. Pass the index by incrementing one.return findPathRecursive(currentNode.left, sequence, sequenceIndex + 1) || findPathRecursive(currentNode.right, sequence, sequenceIndex + 1);
