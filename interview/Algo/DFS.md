@@ -13,4 +13,14 @@
    - else call the same method pass the left and right nodes and do minus the current value from the target sum. findPathsRecursive(currentNode.left, sum - currentNode.val, currentPath, allPaths); findPathsRecursive(currentNode.right, sum - currentNode.val, currentPath, allPaths);
    - remove the last element from the list of the current path. currentPath.remove(currentPath.size()-1)
  
-- 
+- Given a binary tree, return all root-to-leaf paths.
+   - This is similar to the above we do not need to put a condition for the target sum. In fact it's not an input so only we have to check if the current node is a leaf node or not. Means if(root.left==null && root.right==null)
+   - Rest everything we can keep same to get the all root to leaf path.
+- Given a binary tree, find the root-to-leaf path with the maximum sum.
+   - We can take the static value which will track the max value along all paths.
+   - Also we have to pass the current sum in the path instead of the list of current values.
+   - Add base condition if root null returns 0
+   - add current value to find the current sum
+   - If the leaf node then check whether the sum is greater than the global sum or not. Update based on condition
+   - Else call the same method with the left and right node
+   - minus the current value from the current sum.
