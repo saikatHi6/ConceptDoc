@@ -24,3 +24,10 @@
    - If the leaf node then check whether the sum is greater than the global sum or not. Update based on condition
    - Else call the same method with the left and right node
    - minus the current value from the current sum.
+ 
+- Given a binary tree where each node can only have a digit (0-9) value, each root-to-leaf path will represent a number. Find the total sum of all the numbers represented by all paths.
+    - Here also we will do recursively. The method will take 2 inputs root and pathSum.
+    - Add base condition if root equals null return 0
+    - calculate path sum. pathSum = 10*pathSum+root.val
+    - if the leaf node returns pathSum
+    - call the same method once with the left node and right node with path sum. then the sum of both. return findRootToLeafPathNumbers(currentNode.left, pathSum) + findRootToLeafPathNumbers(currentNode.right, pathSum);
