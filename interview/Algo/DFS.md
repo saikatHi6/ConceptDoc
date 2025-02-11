@@ -39,3 +39,7 @@
    - Another base condition is if the index is greater than the seq array size or the seq of the index value is not equals to the root of val then return false. if (sequenceIndex >= sequence.length || currentNode.val != sequence[sequenceIndex])
    - If the leaf node then returns true
    - call the same method once with the left node and another time with the right node. Pass the index by incrementing one.return findPathRecursive(currentNode.left, sequence, sequenceIndex + 1) || findPathRecursive(currentNode.right, sequence, sequenceIndex + 1);
+ 
+- Given a binary tree and a number ‘S’, find all paths in the tree such that the sum of all the node values of each path equals ‘S’. Please note that the paths can start or end at any node but all paths must follow direction from parent to child (top to bottom).
+- Given a binary tree, find the length of its diameter. The diameter of a tree is the number of nodes on the longest path between any two leaf nodes. The diameter of a tree may or may not pass through the root.
+- Find the path with the maximum sum in a given binary tree. Write a function that returns the maximum sum. A path can be defined as a sequence of nodes between any two nodes and doesn’t necessarily pass through the root. The path must contain at least one node.
