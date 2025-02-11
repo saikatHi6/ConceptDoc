@@ -1,7 +1,16 @@
-- Given a binary tree and a number ‘S’, find if the tree has a path from root-to-leaf such that the sum of all the node values of that path equals ‘S’.
-   - We will use recurssion for this solution
-   - create a funtion which will take 2 inputs root node and target sum. Return boolean
+- Given a binary tree and a number ‘S’, find if the tree has a path from root to leaf such that the sum of all the node values of that path equals ‘S’.
+   - We will use recursion for this solution
+   - create a function that will take 2 inputs root node and target sum. Return boolean
    - Add base condition if root equals null return false
    - If target sum equals root val and root of left and right null then return true. if(targetSum==root.val && root.left==null && root.right==null) return true
-   - Call same method pass left node of root and taget sum minus current value similarly with or condition call right node. return hasPathSum(root.left,targetSum-root.val) || hasPathSum(root.right,targetSum-root.val)
-- Given a binary tree and a number ‘S’, find all paths from root-to-leaf such that the sum of all the node values of each path equals ‘S’.
+   - Call the same method to pass the left node of the root and target sum minus current value similarly with or condition call right node. return hasPathSum(root.left,targetSum-root.val) || hasPathSum(root.right,targetSum-root.val)
+- Given a binary tree and a number ‘S’, find all paths from root to leaf such that the sum of all the node values of each path equals ‘S’.
+   - Here also we will use recursion.
+   - Define a function that will take 4 inputs root node, target sum, and list of nodes in the current path, a list of list nodes that match the sum path. Return void.
+   - Add a base condition like the one above and return blank if the root equals null.
+   - Add current value to the list of the current path
+   - If the current value is equal to the target sum and the left and right values of the current node are equal to null then create a new list using the current list path and add to the final list of list.
+   - else call the same method pass the left and right nodes and do minus the current value from the target sum. findPathsRecursive(currentNode.left, sum - currentNode.val, currentPath, allPaths); findPathsRecursive(currentNode.right, sum - currentNode.val, currentPath, allPaths);
+   - remove the last element from the list of the current path. currentPath.remove(currentPath.size()-1)
+ 
+- 
