@@ -1,0 +1,7 @@
+- Given a binary tree and a number ‘S’, find if the tree has a path from root-to-leaf such that the sum of all the node values of that path equals ‘S’.
+   - We will use recurssion for this solution
+   - create a funtion which will take 2 inputs root node and target sum. Return boolean
+   - Add base condition if root equals null return false
+   - If target sum equals root val and root of left and right null then return true. if(targetSum==root.val && root.left==null && root.right==null) return true
+   - Call same method pass left node of root and taget sum minus current value similarly with or condition call right node. return hasPathSum(root.left,targetSum-root.val) || hasPathSum(root.right,targetSum-root.val)
+- Given a binary tree and a number ‘S’, find all paths from root-to-leaf such that the sum of all the node values of each path equals ‘S’.
