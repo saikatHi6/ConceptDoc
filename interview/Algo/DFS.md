@@ -40,8 +40,27 @@
    - If the leaf node then returns true
    - call the same method once with the left node and another time with the right node. Pass the index by incrementing one.return findPathRecursive(currentNode.left, sequence, sequenceIndex + 1) || findPathRecursive(currentNode.right, sequence, sequenceIndex + 1);
  
-- Given a binary tree and a number ‘S’, find all paths in the tree such that the sum of all the node values of each path equals ‘S’. Please note that the paths can start or end at any node but all paths must follow direction from parent to child (top to bottom).
+- Given a binary tree and a number ‘S’, find all paths in the tree such that the sum of all the node values of each path equals ‘S’. Please note that the paths can start or end at any node but all paths must follow directions from parent to child (top to bottom).
    - This can be solved in 2 ways O(N^2) which can be followed like the way to solve all root-to-leaf paths and find a specific sum and O(N) solution using the map.
-   - 
+   - Provide 3 inputs. Root node, target sum, and list ofthe  current path and return pathCount.
+   - Add base condition root == null return 0
+   - add current val in the current path list
+   - initialize pathCount and pathSum equal to 0
+   - Take an iterator and add values from the current path list to find the sum of the current path values.  ListIterator<Integer> pathIterator = currentPath.listIterator(currentPath.size());
+   - iterate while loop from back and add to the pathSum
+   - if pathSum equals target sum then increase counter
+   - call the same method for the left node and assign it to pathSum pathCount += countPathsRecursive(currentNode.left, S, currentPath);
+   - Same for the right node pathCount += countPathsRecursive(currentNode.right, S, currentPath);
+   - in the end, remove the current value from currentPath list
+ 
+      - O(n) solution can be done using Prefix Sum 
 - Given a binary tree, find the length of its diameter. The diameter of a tree is the number of nodes on the longest path between any two leaf nodes. The diameter of a tree may or may not pass through the root.
+     - Create a global static value to store max distance between the longest leaf nodes
+     - Take function where will pass the root and output will be in int
+     - Add a base condition if root equals null return 0
+     - take an int to calculate the left height call the same method and pass the left node of the root.
+     - take another int to calculate the right height call the same method and pass the left node of the root.
+     - if leaf height is not equal to 0 and right height is not equal to 0 then sum of left height and right height plus 1. if (leftTreeHeight != 0 && rightTreeHeight != 0)  int diameter = leftTreeHeight + rightTreeHeight + 1;
+     - Update the global variable by comparing the global variable and the sum of 2 diameters.
+     - finally return max of leftDiameter and  rightDiameter +1. Math.max(leftTreeHeight, rightTreeHeight) + 1; 
 - Find the path with the maximum sum in a given binary tree. Write a function that returns the maximum sum. A path can be defined as a sequence of nodes between any two nodes and doesn’t necessarily pass through the root. The path must contain at least one node.
