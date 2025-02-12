@@ -64,3 +64,13 @@
      - Update the global variable by comparing the global variable and the sum of 2 diameters.
      - finally return max of leftDiameter and  rightDiameter +1. Math.max(leftTreeHeight, rightTreeHeight) + 1; 
 - Find the path with the maximum sum in a given binary tree. Write a function that returns the maximum sum. A path can be defined as a sequence of nodes between any two nodes and doesn’t necessarily pass through the root. The path must contain at least one node.
+    - This is similar to the above but we have to do the sum of the node's value
+    - Create a global static value to store max value
+    - add base condition if root equal null return 0
+    - call the same method with the left node and assign leftNodesValue
+    - call the same method with the right node and assign rightNodesValue
+    - check current left value greater than 0 or not to avoid adding a negative value maxPathSumFromLeft = Math.max(maxPathSumFromLeft, 0);
+    - check current right value greater than 0 or not to avoid adding a negative value maxPathSumFromRight = Math.max(maxPathSumFromRight, 0);
+    - find the current sum of leftNodesValue and rightNodesValue and current val int localMaximumSum = maxPathSumFromLeft + maxPathSumFromRight + currentNode.val;
+    - update the global sum based on the comparison
+    - return the max of left sum and right sum then add the current value. return Math.max(maxPathSumFromLeft, maxPathSumFromRight) + currentNode.val;
