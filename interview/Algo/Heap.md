@@ -22,4 +22,44 @@ minHeap = new PriorityQueue<>((a, b) -> a - b);
 #### Rules of "findMedian" 
      - Return the sum/2 of the max and min heap top if the size is equal.
      - Return the top of the max heap if not equal
-    
+
+
+## Sliding Window Median
+
+
+### Problem Statement
+Given an array of numbers and a number ‘k’, find the median of all the ‘k’ sized sub-arrays (or windows) of the array.
+
+#### Example 1:
+
+Input: nums=[1, 2, -1, 3, 5], k = 2
+Output: [1.5, 0.5, 1.0, 4.0]
+Explanation: Lets consider all windows of size ‘2’:
+
+[ 1, 2, -1, 3, 5] -> median is 1.5
+[1, 2, -1, 3, 5] -> median is 0.5
+[1, 2, -1, 3, 5] -> median is 1.0
+[1, 2, -1, 3, 5] -> median is 4.0
+#### Example 2:
+
+Input: nums=[1, 2, -1, 3, 5], k = 3
+Output: [1.0, 2.0, 3.0]
+Explanation: Lets consider all windows of size ‘3’:
+
+[1, 2, -1, 3, 5] -> median is 1.0
+[1, 2, -1, 3, 5] -> median is 2.0
+[1, 2, -1, 3, 5] -> median is 3.0
+
+### Solution
+
+This is similar to above, we can follow the similar approach for inserting new elements and find the median of each window. We have to maintain a window where we have to remove the old element and insert the new element. For both we have to rebalance.
+
+  - Iterate through the given numbers of the array.
+  - Add one by one element using the above insertion rule.
+  - Then rebalance elements as per this condition (Max Heap size+1>=Min Heap Size).
+  - Check the window is selected or not  if (i - k + 1 >= 0)
+  - If satisfy the above condition
+  - Find the median and update in final array
+  - Fetch the element from the beginning and compare if it is <= max heap, then the element should be present in the max heap and remove it from the Max heap.
+  - Else remove from Min heap
+  - rebalance heaps
