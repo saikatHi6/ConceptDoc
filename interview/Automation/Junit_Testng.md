@@ -40,7 +40,7 @@
         - junit.jupiter.execution.parallel.mode.default = concurrent/same_thread
 
 # 7. Exception
-### Junit 5: Expected Exception 
+### Junit 4: Expected Exception 
 
 ```
 import org.junit.Rule;
@@ -69,7 +69,35 @@ public class JunitFourTest {
 
 ```
 
+### Junit 5: Expected Exception 
 
+```
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+public class JunitFiveTest {
+
+    @Test
+    void shouldThrowException() {
+        ComponentUnderTest componentUnderTest = new ComponentUnderTest();
+        DummyException dummyException =
+                assertThrows(DummyException.class, () -> componentUnderTest.exceptionThrowingMethod(-1));
+        // Use different asserts on the exception object.
+    }
+
+    @Test
+    public void testException() {
+        ComponentUnderTest componentUnderTest = new ComponentUnderTest();
+        assertThatThrownBy(() -> componentUnderTest.exceptionThrowingMethod(-1))
+                .isInstanceOf(DummyException.class)
+                .hasMessageContaining("dummy")
+                .hasNoCause();
+    }
+}
+```
 
 
 Link - https://igorski.co/running-tests-in-parallel-with-junit-5/        
