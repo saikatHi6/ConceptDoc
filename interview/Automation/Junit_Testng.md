@@ -103,4 +103,5 @@ public class JunitFiveTest {
 ```
 
 
-Link - https://igorski.co/running-tests-in-parallel-with-junit-5/        
+Link - https://igorski.co/running-tests-in-parallel-with-junit-5/       
+Ref - https://www.lambdatest.com/blog/junit5-extensions/#Architecture
