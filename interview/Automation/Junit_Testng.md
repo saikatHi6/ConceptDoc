@@ -34,4 +34,42 @@
 #### JUnit 5: Provides built-in support for nested tests, allowing better organization and grouping of related tests.
 # 6. Parallel Execution:
 #### JUnit 4: Parallel execution is not built-in but can be achieved using third-party libraries.
-#### JUnit 5: Supports parallel execution at the class and method level, improving test efficiency.    
+#### JUnit 5: Supports parallel execution at the class and method level, improving test efficiency.  
+        - junit.jupiter.execution.parallel.enabled = true
+        - **JUnit 5 runs both classes and methods in a single thread by default, so this won't change anything.**
+        - junit.jupiter.execution.parallel.mode.default = concurrent/same_thread
+
+# 7. Exception
+### Junit 5: Expected Exception 
+
+```
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+
+public class JunitFourTest {
+
+    @Rule
+    **public ExpectedException expectedException = ExpectedException.none();**
+
+    @Test
+    public void shouldUseRuleToTestForException() throws DummyException {
+        **expectedException.expect(DummyException.class);**
+        ComponentUnderTest component = new ComponentUnderTest();
+        component.exceptionThrowingMethod(-1);
+    }
+
+    **@Test(expected = DummyException.class)**
+    public void shouldTestForException() throws DummyException {
+        ComponentUnderTest component = new ComponentUnderTest();
+        component.exceptionThrowingMethod(-1);
+    }
+
+}
+
+```
+
+
+
+
+Link - https://igorski.co/running-tests-in-parallel-with-junit-5/        
