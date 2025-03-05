@@ -6,6 +6,9 @@
     - JUnit Platform: Provides the foundation for launching test frameworks.
     - JUnit Jupiter: Contains the API for writing tests, extensions, and assertions.
     - JUnit Vintage: Provides backward compatibility for running JUnit 3 and 4 tests.
+![image](https://github.com/user-attachments/assets/821d0c45-20b3-4db4-a96e-8b42cf7f63a2)
+
+    
 # 2. Annotations:
 #### JUnit 4: Uses annotations like @Test, @Before, @After, @BeforeClass, and @AfterClass.
 
