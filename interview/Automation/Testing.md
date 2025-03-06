@@ -10,3 +10,22 @@ This strategy ensures that the various input possibilities are sufficiently hand
 ## What Are the Steps Involved in STLC?
 
 ![image](https://github.com/user-attachments/assets/413e225e-e6c3-441c-ae3e-695783e12fd6)
+
+
+## What Is Stamp Coupling?
+Stamp coupling arises when part of a data structure is passed through the module interface instead of using simple data types, which can create unnecessary dependencies between components.
+
+## What Do You Understand by Coupling?
+In software engineering, coupling is the degree of interdependence between software units, often discussed in software engineering interview questions. It evaluates how closely integrated certain modules are within a system.
+
+Lower coupling is generally preferred because it means that changes in one module are less likely to require changes in another, making the system more adaptable and easier to manage.
+
+## What Is Common Coupling?
+Common coupling occurs when multiple modules have access to the same global data area, making the system more complex to comprehend and maintain. Changes to the global data can affect all modules that reference it.
+
+
+## Define Cohesion
+In software engineering, cohesion is a measure of the closeness of the relationship between the various elements of a module. High cohesion means that a module performs one task or a set of related tasks and has minimal dependency on other modules, making it simpler to understand, maintain, and reuse.
+
+## What Is Temporal Cohesion?
+Temporal cohesion refers to a circumstance in which a module comprises tasks that are related because they must be completed within the same time frame.
