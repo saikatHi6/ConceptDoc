@@ -32,6 +32,14 @@
         - Test listeners: Intercepting test events
         - Parameter resolvers: Providing custom parameter values
         - Condition evaluators: Dynamically enabling or disabling tests
+
+#### To implement an extension you have to implement of the following interfaces:
+
+    1.  TestInstancePostProcessor - executed after the test has been created, can be used to inject dependencies into the test instance
+    2.  ExecutionCondition - used to disable tests based on conditions
+    3.  ParameterResolver - used to resolve parameters for test methods
+    4.  TestExecutionExceptionHandler - used to handle exceptions            
+              
 # 5. Nested Tests:
 #### JUnit 4: Nested tests are not directly supported.
 #### JUnit 5: Provides built-in support for nested tests, allowing better organization and grouping of related tests.
