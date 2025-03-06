@@ -6,3 +6,7 @@ The links within an equivalence class are symmetric, transitive, and reflexive, 
 Testing one representative from each equivalence class allows testers to detect flaws efficiently without having to test every potential input.
 
 This strategy ensures that the various input possibilities are sufficiently handled while reducing the number of test cases, making it a valuable concept to appear in software engineering interview questions.
+
+## What Are the Steps Involved in STLC?
+
+![image](https://github.com/user-attachments/assets/413e225e-e6c3-441c-ae3e-695783e12fd6)
