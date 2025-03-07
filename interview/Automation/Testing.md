@@ -29,3 +29,12 @@ In software engineering, cohesion is a measure of the closeness of the relations
 
 ## What Is Temporal Cohesion?
 Temporal cohesion refers to a circumstance in which a module comprises tasks that are related because they must be completed within the same time frame.
+
+## What Are the Types of Polymorphism?
+Different types of polymorphism are:
+
+**Ad-hoc Polymorphism:** This allows a function to behave differently based on the type of arguments passed to it. Function overloading is a common example of ad-hoc polymorphism.
+**Parametric Polymorphism:** This enables the creation of generic functions that can operate on values of any type, regardless of their specific types. It is often implemented in languages that support generics, like Java and C#.
+Subtyping Polymorphism: Also known as inclusion polymorphism, this allows functions or methods to work with objects of a superclass and its subclasses. It is commonly seen in inheritance hierarchies in object-oriented programming.
+**Row Polymorphism:** This type deals with operations that affect specific sections of a data structure, such as a row in a database. It is particularly useful in databases and data manipulation languages.
+**Polytism:** This involves creating algorithms with types that can be specified as parameters when the algorithm is instantiated. It is a more advanced form of polymorphism, allowing for greater flexibility in algorithm design.
