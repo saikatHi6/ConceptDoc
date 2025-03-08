@@ -38,3 +38,12 @@ Different types of polymorphism are:
 Subtyping Polymorphism: Also known as inclusion polymorphism, this allows functions or methods to work with objects of a superclass and its subclasses. It is commonly seen in inheritance hierarchies in object-oriented programming.
 **Row Polymorphism:** This type deals with operations that affect specific sections of a data structure, such as a row in a database. It is particularly useful in databases and data manipulation languages.
 **Polytism:** This involves creating algorithms with types that can be specified as parameters when the algorithm is instantiated. It is a more advanced form of polymorphism, allowing for greater flexibility in algorithm design.
+
+### Software Reliability Can Be Checked Through Which Model?
+The Rayleigh model is a well-known approach for assessing software reliability. It is a parametric model used to predict the failure rate of software over time, based on a statistical distribution. The model assumes failures occur randomly, and the time between failures follows a Rayleigh distribution.
+
+In practice, the Rayleigh model involves estimating the parameters of the distribution using data collected from the software project, such as failure reports and execution time. Once these parameters are established, the model can be utilized to predict future failure rates and assess the reliability of the software system.
+
+By employing the Rayleigh model, developers, and project managers can gain valuable insights into the software's reliability, helping to identify potential issues and improve overall software quality.
+
+
