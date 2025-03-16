@@ -39,3 +39,27 @@ Ref :
 RAID is a data storage virtualization technology that combines multiple hard drive components into a single logical unit for the purposes of data redundancy, performance improvement, or both.
 
 Data is distributed across the drives in one of several ways, seen as RAID levels, depending on the required level of redundancy and performance. The different schemas, or data distribution layouts, are named as RAID followed by a number, for example RAID 0 or RAID 1. Each schema, or RAID level, provides a different balance among the key goals: Reliability, availability, performance, and capacity.
+
+- RAID 0: It's built with 2 drives. Each drive stores different blocks. Data spread across the drives used stripes. It is very fast. It doesn't provide reliability but high performance.
+  ![image](https://github.com/user-attachments/assets/57dbf4c4-dfae-4621-a871-c6a59aca96d4)
+
+- RAID 1: This provides data mirroring facilities. Data written simultaneously in 2 different disks. The primary advantage of RAID 1 is that it provides 100 percent data redundancy. Because the contents of the disk are written to a second disk, the system can sustain the failure of one disk. Both disks contain the same data always.
+  ![image](https://github.com/user-attachments/assets/e5ff8531-bb97-4722-931e-55f28374d57b)
+
+- RAID 5 & 6: Parity Data is redundant data that is generated to provide fault tolerance within certain RAID levels. When a drive failure occurs, the controller uses the parity data to regenerate user data. Parity data is present for RAID 5, 6, 50, and 60. The parity data is distributed across all the hard drives in the system. If a single hard drive fails, it can be rebuilt from the parity and the data on the remaining hard drives.
+  ![image](https://github.com/user-attachments/assets/909f4c7e-8ec0-4bab-8331-5feedcb4774d)
+
+  ![image](https://github.com/user-attachments/assets/3459a675-de75-4e2c-847a-90c045f65746)
+
+Need to read : https://www.arcserve.com/blog/understanding-raid-performance-various-levels
+Ref : https://www.dell.com/support/kbdoc/en-in/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications
+
+https://www.techtarget.com/searchstorage/answer/RAID-types-and-benefits-explained
+
+
+
+
+
+
+
+RAID Level Discussion : https://www.dell.com/support/kbdoc/en-in/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications
