@@ -14,3 +14,14 @@ It’s the type most often used to store information on a computer hard drive or
 - Familiar protocols – file storage relies on common protocols used throughout computing, such as Network File System (NFS), Common Internet File System (CIFS), and Server Message Block (SMB)
 - Cost-efficient (to a point) – using a NAS device, you can remove data from expensive servers and store it on less costly LAN-connected devices
 - Backup/recovery – storing backup data on LAN devices allows you to recover quickly if your network goes down
+
+### **Object Storage:**
+Object storage, also known as object-based storage, is a flat structure in which files are broken into pieces and spread out among hardware. In object storage, the data is broken into discrete units called objects and is kept in a single repository, instead of being kept as files in folders or as blocks on servers.
+
+Object storage volumes work as modular units: each is a self-contained repository that owns the data, a unique identifier that allows the object to be found over a distributed system, and the metadata that describes the data. That metadata is important and includes details like age, privacies/securities, and access contingencies.
+
+Ref : 
+- Example described very well for Block & Object store : https://www.cloudflare.com/learning/cloud/object-storage-vs-block-storage/
+- Definitions: https://www.redhat.com/en/topics/data-storage/file-block-object-storage
+- Advantages/Disadvantages: https://www.nutanix.com/blog/block-storage-vs-object-storage-vs-file-storage
+- https://www.oracle.com/in/cloud/storage/block-volumes/what-is-block-storage/vs-object-storage/
