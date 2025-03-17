@@ -63,3 +63,19 @@ https://www.techtarget.com/searchstorage/answer/RAID-types-and-benefits-explaine
 
 
 RAID Level Discussion : https://www.dell.com/support/kbdoc/en-in/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications
+
+
+## What is Deduplication & Compression? How do they help in storage optimization?
+
+### What Is Data Deduplication?
+Data deduplication is a data compression technique used to eliminate redundant copies of data, thus optimizing storage utilization. Identifying and removing duplicate data blocks or files significantly reduces the amount of storage space required, leading to cost savings and enhanced system performance. As organizations increasingly rely on data-driven processes, data deduplication has become an essential aspect of data management strategies.
+
+### Types of Data Deduplication
+Data deduplication can be implemented at different levels, with each method having distinct characteristics and use cases.
+
+- File-level deduplication: This method compares entire files to detect duplicates. If a file is found to be identical to an existing one, it is not stored again. While file-level deduplication is simpler to implement, it may not be effective if only parts of a file are redundant.
+- Block-level deduplication: Here, data is divided into smaller blocks, and each block is analyzed for redundancy. This approach is more efficient as it can identify duplicate data within files, thus providing higher storage savings.
+- Byte-level deduplication: Byte-level deduplication is the most granular form of deduplication, examining data at the byte level to identify duplicate sequences. This approach offers the highest potential for data reduction but requires more computational resources.
+- Inline and post-process deduplication:
+    - Inline deduplication occurs in real time as data is being written to storage. It provides immediate storage savings but may affect system performance due to the processing overhead.
+    - Post-process deduplication happens after data is written to storage. This allows for less impact on system performance during data writing, but the storage savings are realized later.
