@@ -79,3 +79,28 @@ Data deduplication can be implemented at different levels, with each method havi
 - Inline and post-process deduplication:
     - Inline deduplication occurs in real time as data is being written to storage. It provides immediate storage savings but may affect system performance due to the processing overhead.
     - Post-process deduplication happens after data is written to storage. This allows for less impact on system performance during data writing, but the storage savings are realized later.
+
+
+Data Deduplication Ref with all details : https://www.purestorage.com/knowledge/what-is-data-deduplication.html
+
+### Strategies for Deduplication Implementation
+You can set up one of the following deduplication implementations:
+
+- Source-Side (Client-Side) Deduplication: (Recommended). Use source-side deduplication when the MediaAgent and the clients are in a delayed or low bandwidth network environment such as WAN. You can also use source-side deduplication for Remote Office backup solutions. For example, Laptop Backup (DLO) Implementing this method reduces the amount of data that is transferred across the network.
+- MediaAgent-Side (Storage-Side) Deduplication: Use MediaAgent-side deduplication when the MediaAgent and the clients are in a fast network environment such as LAN and if you do not want any CPU utilization on client computers. When the signature generation option is enabled on the MediaAgent, MediaAgent-side deduplication reduces the CPU usage on the client computers by moving the processing to the MediaAgent.
+- Global Deduplication: Global deduplication provides greater flexibility in defining retention policies when protecting the data.Use global deduplication storage policies in the following scenarios:To consolidate Remote Office backup data in one location. When you must manage data types, such as file system data and virtual machine data, by different storage policies but in the same disk library.
+
+Ref : https://documentation.commvault.com/2024/expert/optimize_storage_space_using_deduplication.html
+
+### What is data compression?
+It is an algorithmic process that shrinks the size of data by first finding identical data sequences appearing in a row and then saving only the first sequence and replacing the following identical sequences with the information on the number of times they appear in a row. By making data size smaller at a binary level, less disk space is consumed, and hence more data can be stored in the available capacity. Compression depends on the nature of the dataset itself – whether it is in a compressible format and how much of it can be compressed. Normally, duplicate character strings, for example, extra spaces are eliminated with the help of a compaction algorithm and then compressed data is stored in compression chunks within the storage device. This type of compression is lossless (does not cause any data loss). Sophisticated data compression algorithms such as LZ77, LZR, Deflate, LZ, LZMA, and many more are used to compress files and stored data into the smallest possible amount of stored bits.
+
+### Methods of compression
+Depending on the compressed data type, either a lossy or a lossless compression algorithm can be used. We’re going to explore the differences between both and how they can impact the underlying compressed data.
+
+- Lossy Compression – In a lossy compression algorithm, bits and pieces of the data being compressed are lost during the compression process. While this might sound scary at first, it’s perfectly fine in certain situations, such as the compression of image files. Images consist of thousands of pixels, and an algorithm that loses or slightly distorts some pixel data would still be completely indistinguishable from the original image in most cases.
+- Lossless Compression – When lossless compression algorithms are used to compress data, there is no underlying data loss. This means that after a lossless compression algorithm is run, the compressed contents can be retrieved and transformed into a pristine copy of the original. This is required for sensitive data and areas where precision is required, such as when even a single bit can alter the meaning of the data altogether.
+
+Ref : https://www.lytics.com/blog/data-deduplication-vs-data-compression/
+
+More info About advantages and disadvantages : https://hystax.com/optimizing-data-storage-deduplication-vs-compression/
