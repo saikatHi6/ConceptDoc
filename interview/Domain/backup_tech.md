@@ -79,6 +79,7 @@ Data deduplication can be implemented at different levels, with each method havi
 - Inline and post-process deduplication:
     - Inline deduplication occurs in real time as data is being written to storage. It provides immediate storage savings but may affect system performance due to the processing overhead.
     - Post-process deduplication happens after data is written to storage. This allows for less impact on system performance during data writing, but the storage savings are realized later.
+![image](https://github.com/user-attachments/assets/6e53f7de-f84c-4191-bada-3aeec06fdc92)[https://www.datacore.com/blog/inline-vs-post-process-deduplication-compression/]
 
 
 Data Deduplication Ref with all details : https://www.purestorage.com/knowledge/what-is-data-deduplication.html
