@@ -2,7 +2,7 @@
    - Take 3 Nodes. cur will initialized with head. prev & next will initialized with null
    - Iterate loop until cur does not equal null. while(cur!=null)
    - put cur.next into next. next=cur.next
-   - put prev into cur.next. prev=cur.next.
+   - put prev into cur.next. cur.next=prev
    - cur put into the prev. prev = cur
    - next put into cur. cur = next 
 - Reverse a Sub-list
