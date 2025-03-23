@@ -20,3 +20,12 @@ FC & NVMe-oF differ in various aspects, such as Architecture, Performance, compa
 | NVMe-oF has higher throughput and IOPS than FC.                                                                    | FC has lower latency than NVMe-oF                                                                                 |
 | NVMe-oF can leverage existing Ethernet or InfiniBand infrastructure.                                               | FC requires FC-specific hardware and software                                                                     |
 |                                                                                                                    | FC is more expensive and complex to deploy and maintain than NVMe-oF, but also more mature and stable.            |
+
+
+
+### How do FC and NVMe-oF compare?
+
+FC and NVMe-oF are not mutually exclusive, but rather complementary protocols that can coexist and interoperate in SAN environments.
+
+- FC can support NVMe-oF as a transport option, using the FC-NVMe standard that defines how to map NVMe commands and responses to FC frames.This allows FC users to benefit from the advantages of NVMe-oF, such as higher performance and lower CPU utilization, without replacing their existing FC infrastructure.
+- Similarly, NVMe-oF can support FC as a legacy protocol, using the NVMe-FCP standard that defines how to map SCSI commands and responses to NVMe-oF QPs. This allows NVMe-oF users to access FC-based storage devices, such as arrays or tapes, without losing compatibility.
