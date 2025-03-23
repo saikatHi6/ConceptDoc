@@ -29,3 +29,6 @@ FC and NVMe-oF are not mutually exclusive, but rather complementary protocols th
 
 - FC can support NVMe-oF as a transport option, using the FC-NVMe standard that defines how to map NVMe commands and responses to FC frames.This allows FC users to benefit from the advantages of NVMe-oF, such as higher performance and lower CPU utilization, without replacing their existing FC infrastructure.
 - Similarly, NVMe-oF can support FC as a legacy protocol, using the NVMe-FCP standard that defines how to map SCSI commands and responses to NVMe-oF QPs. This allows NVMe-oF users to access FC-based storage devices, such as arrays or tapes, without losing compatibility.
+
+
+![image](https://github.com/user-attachments/assets/50233a7a-14d5-4543-adcb-13e84fb2a5b1)
