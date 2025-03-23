@@ -8,7 +8,7 @@ FC protocol uses optical or copper cables to connect SAN devices. FC operates at
 
 ## What is NVMe-oF?
 
-NVMe-oF is a protocol that extends the NVMe interface to remote storage devices over a fabric. NVMe is a standard that defines communication with SSD using a PCI Express bus. NVMe-of enables hosts to access SSDs over FC, Ethernet or InfiniBand. It aims to reduce latency, increase parallelism, and improve efficiency for flash-based storage.
+NVMe-oF is a protocol that extends the NVMe interface to remote storage devices over a fabric. NVMe(Non-Volatile Memory Express) is a standard that defines communication with SSD using a PCI Express bus. NVMe-of enables hosts to access SSDs over FC, Ethernet or InfiniBand. It aims to reduce latency, increase parallelism, and improve efficiency for flash-based storage.
 
 ## How do FC and NVMe-oF differ?
 
