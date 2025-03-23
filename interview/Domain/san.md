@@ -32,3 +32,15 @@ FC and NVMe-oF are not mutually exclusive, but rather complementary protocols th
 
 
 ![image](https://github.com/user-attachments/assets/50233a7a-14d5-4543-adcb-13e84fb2a5b1)
+
+
+Ref : https://www.techtarget.com/searchstorage/definition/NVMe-over-FC-Nonvolatile-Memory-Express-over-Fibre-Channel
+
+
+![image](https://github.com/user-attachments/assets/c375dbdc-1e08-455f-b60f-fec84cb19e31)
+
+NVME over TCP : https://www.simplyblock.io/blog/nvme-over-tcp-vs-iscsi/
+
+![image](https://github.com/user-attachments/assets/dadde15c-34fe-487b-8fe0-2e3e0ead9357)
+
+Throughput, IOPS, Latency Ref: https://www.simplyblock.io/blog/iops-throughput-latency-explained/
