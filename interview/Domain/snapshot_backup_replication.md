@@ -11,5 +11,9 @@ A virtual hard disk (VHD) is a disk image file format for storing the entire con
 
 ## Benifits of Virtualization 
 
-1. Easier Management : Virtualization disguises the actual complexity of a storage system to help admin perform backup, recovery and archiving more easily and quickly. 
-2. 
+1. Easier Management : Virtualization abstruct the actual complexity of a storage system to help admin perform backup, recovery and archiving more easily and quickly. 
+2. Better Storage Utilization : Pooling storage capacity across multiple systems make it easier to efficiently allocate and use the total storage.
+3. Extending Life for Older Storage Systems: Including older storage gear in the virtualized storage pool extends its usefullness by handaling archival or less critical data.
+4. Universal Additional Features: Tiering, Caching and replication can be implemeted at the virtualization level, helping to standarized these practices across all storage system.
+
+Ref VHD : https://www.techtarget.com/searchvirtualdesktop/definition/virtual-hard-disk-VHD 
