@@ -27,3 +27,13 @@ Storage snapshots are often based around the idea of change, which is also refer
 3. When an administrator creates a storage snapshot, the underlying system creates a differencing disk that's bound to the original virtual hard disk. All future write operations are directed to the differencing disk, leaving the original virtual hard disk in an unaltered state.
 
 ![image](https://github.com/user-attachments/assets/0a726208-22b2-4d8d-921b-28f574536dad)
+
+
+Snapshot Ref : https://www.techtarget.com/searchdatabackup/definition/storage-snapshot
+
+![image](https://github.com/user-attachments/assets/8ffff1a9-1f3b-45db-ba86-509a68b23ee8)
+
+![image](https://github.com/user-attachments/assets/94d21ad2-1341-4430-a398-814f2daabb00)
+
+
+Backup Type Ref : https://www.techtarget.com/searchdatabackup/tip/Data-backup-types-explained-Full-incremental-differential-and-incremental-forever-backup
