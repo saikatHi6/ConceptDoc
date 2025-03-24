@@ -37,3 +37,12 @@ Snapshot Ref : https://www.techtarget.com/searchdatabackup/definition/storage-sn
 
 
 Backup Type Ref : https://www.techtarget.com/searchdatabackup/tip/Data-backup-types-explained-Full-incremental-differential-and-incremental-forever-backup
+
+### Synchronous vs. asynchronous replication
+
+Synchronous replication is typically used to provide high availability of critical applications. In these scenarios, failover from the primary to secondary array is nearly instantaneous, which ensures little to no application downtime and minimal negative impact to users.
+
+Asynchronous replication mainly differs from synchronous replication in the data writing method to the storage replica site. In synchronous replication, data is written to the primary storage and the replica simultaneously -- hence the term synchronous. Since the primary -- the source -- and replica copies are always synchronized, the possibility of data loss is zero.
+
+![image](https://github.com/user-attachments/assets/c59e6221-29a4-414a-8f93-3a85f49db4f4)
+
