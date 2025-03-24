@@ -22,4 +22,8 @@ Ref VHD : https://www.techtarget.com/searchvirtualdesktop/definition/virtual-har
 
 Storage snapshots are often based around the idea of change, which is also referred to as delta or differencing. Snapshots often use a differencing disk, which is a special type of virtual hard disk that's linked to a parent virtual hard disk.
 
+1. Any storage snapshot starts with a complete backup of the workload's current data state.
+2. Once an initial backup is created, the storage snapshot system captures and records the changes that take place to the application's data, that is, the differences or deltas in the data. Only those changes are recorded and logged at that PIT.
+3. When an administrator creates a storage snapshot, the underlying system creates a differencing disk that's bound to the original virtual hard disk. All future write operations are directed to the differencing disk, leaving the original virtual hard disk in an unaltered state.
+
 ![image](https://github.com/user-attachments/assets/0a726208-22b2-4d8d-921b-28f574536dad)
