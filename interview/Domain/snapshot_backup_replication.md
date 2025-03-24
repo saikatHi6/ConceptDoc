@@ -17,3 +17,9 @@ A virtual hard disk (VHD) is a disk image file format for storing the entire con
 4. Universal Additional Features: Tiering, Caching and replication can be implemeted at the virtualization level, helping to standarized these practices across all storage system.
 
 Ref VHD : https://www.techtarget.com/searchvirtualdesktop/definition/virtual-hard-disk-VHD 
+
+### How storage snapshots work
+
+Storage snapshots are often based around the idea of change, which is also referred to as delta or differencing. Snapshots often use a differencing disk, which is a special type of virtual hard disk that's linked to a parent virtual hard disk.
+
+![image](https://github.com/user-attachments/assets/0a726208-22b2-4d8d-921b-28f574536dad)
