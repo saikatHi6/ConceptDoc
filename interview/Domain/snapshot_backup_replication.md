@@ -46,3 +46,21 @@ Asynchronous replication mainly differs from synchronous replication in the data
 
 ![image](https://github.com/user-attachments/assets/c59e6221-29a4-414a-8f93-3a85f49db4f4)
 
+
+
+### How Snapshot works?
+
+#### Copy-on-write: 
+
+A storage snapshot is created by the use of the pre-designated space allocated to it. When the snapshot is created at first, the meta-data related to the original data is stored and is backed up as a copy. There is no physical copy of the snapshot which is created. When the writes to the original volume are being lodged, the snapshot carefully tracks down the changing blocks taking place due to writes, on the original volume. The original data is then overwritten and will fetch the name of “copy-on-write” technique.
+
+![image](https://github.com/user-attachments/assets/99bf87b5-4767-4052-a0ed-18f44494e249)
+
+
+#### Redirect-on-Write:
+
+It is a clone to the Copy-on-write technique related to storage snapshot. Redirect-on-write doesn’t deal in double writing and offers storage space and performance with efficient snapshots. In this technique, new writes are reflected to another location which is separately allocated for snapshots. The main advantage in redirecting the write is that one write takes place at a time, which is different to copy-on-write; where two writes can occur at a time, where one is for writing data on original copy onto the storage and the other one is for the changed data copy.
+
+With the technique of redirect-on-write, the original copy will have point in time data, which will be the snapshot and the changed data will be diverted to the snapshot storage. If a snapshot gets deleted, then the snapshot storage will be re-diverted back into the original volume. If multiple snapshots are created, then complexity factor will rise as access to original data, tracking of the data in snapshots and original volume and reconciliation upon snapshot deletion becomes complex. As the snapshot relies on the original copy of the data, the original set can get quickly fragmented.
+
+![image](https://github.com/user-attachments/assets/52963d19-7b2d-4c56-82b6-2ddba019108a)
