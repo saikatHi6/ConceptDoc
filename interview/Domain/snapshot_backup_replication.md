@@ -64,3 +64,16 @@ It is a clone to the Copy-on-write technique related to storage snapshot. Redire
 With the technique of redirect-on-write, the original copy will have point in time data, which will be the snapshot and the changed data will be diverted to the snapshot storage. If a snapshot gets deleted, then the snapshot storage will be re-diverted back into the original volume. If multiple snapshots are created, then complexity factor will rise as access to original data, tracking of the data in snapshots and original volume and reconciliation upon snapshot deletion becomes complex. As the snapshot relies on the original copy of the data, the original set can get quickly fragmented.
 
 ![image](https://github.com/user-attachments/assets/52963d19-7b2d-4c56-82b6-2ddba019108a)
+
+
+### Differences between RPO and RTO
+
+Recovery point objective is closely related to recovery time objective, which is the maximum length of time computing resources and applications can be down after a failure or disaster. Together, the two approaches enable a BCP and a DR strategy.
+
+##### Recovery point objective. 
+The RPO determines loss tolerance and how much data can be lost. It is a planning objective that defines how often data needs to be backed up to enable recovery. An organization enables RPOs by having a DR approach in place that backs up data at the right intervals, so the amount of data loss never exceeds its determined loss tolerance.
+
+##### Recovery time objective. 
+The RTO comes into play after a loss event. It helps organizations answer the question of how quickly they can recover after data loss due to a failure, natural disaster or malfeasance.
+
+
