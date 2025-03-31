@@ -114,3 +114,16 @@ Explanation: The next interval of [2,3] is [3,4] having index ‘1’. Similarly
 Input: Intervals [[3,4], [1,5], [4,6]]
 Output: [2, -1, -1]
 Explanation: The next interval of [3,4] is [4,6] which has index ‘2’. There is no next interval for [1,5] and [4,6].
+
+
+- Create 2 max heaps one for start intervals and another for end intervals.
+      PriorityQueue<Integer> maxStartHeap = new PriorityQueue<>(n, (i1, i2) -> intervals[i2].start - intervals[i1].start);
+      PriorityQueue<Integer> maxEndHeap = new PriorityQueue<>(n, (i1, i2) -> intervals[i2].end - intervals[i1].end);
+- Update heaps with the indexes and create an array to store the final results.
+- iterate through all elements of the intervals
+- Poll indexes from maxEndHeap
+- Store -1 for the top index fetch from maxEndHeap
+- Compare the top of maxStartHeap and the top of maxEndHeap. Will update the result If the top of the maxStartHeap index is greater or equal to the top of maxEndHeap   if (intervals[maxStartHeap.peek()].start >= intervals[topEnd].end)
+- find the interval that has the closest 'start' until maxStartHeap gets empty and maxStartHeap index is greater or equal to the top of maxEndHeap.while (!maxStartHeap.isEmpty() && intervals[maxStartHeap.peek()].start >= intervals[topEnd].end) {topStart = maxStartHeap.poll();}
+- update the final array with the latest top start
+- add back the topStart in the maxStartHeap heap for the  next comparison.
