@@ -36,8 +36,16 @@ Garbage collection is essential to achieve high performance and latency. The Jav
       - Some cache values are not critical and can be recomputed if needed.
       - Using WeakReference allows GC to free memory when needed, helping prevent OutOfMemoryError.
 
+- Profiling for Memory Leaks: Regularly profile your application to identify and fix memory leaks, which can lead to increased garbage collection and latency.
 
+    #### What is a Memory Leak in Java?
+     In Java, a memory leak occurs when: Your application holds on to objects that are no longer needed, preventing the Garbage Collector (GC) from reclaiming their memory.Even though Java has automatic GC, it won’t collect objects that are still referenced, even if you're not using them anymore.
 
-  
+❗ Why is it bad?
+
+     1. Memory leaks build up over time.
+     2. JVM memory usage increases unnecessarily.
+     3. GC runs more frequently and takes longer = latency increases.
+     4. Eventually leads to OutOfMemoryError or performance degradation.
   
 
