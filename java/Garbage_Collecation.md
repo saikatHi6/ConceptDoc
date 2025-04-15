@@ -61,4 +61,5 @@ Garbage collection is essential to achieve high performance and latency. The Jav
    3. Escape analysis: Detects if objects can be allocated on the stack instead of heap.
    4. Dead code elimination: Removes unused computations.  
   
+![image](https://github.com/user-attachments/assets/fb5352d7-66ab-453b-81c4-eb56404053f4)
 
