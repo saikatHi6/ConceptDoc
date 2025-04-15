@@ -47,5 +47,18 @@ Garbage collection is essential to achieve high performance and latency. The Jav
      2. JVM memory usage increases unnecessarily.
      3. GC runs more frequently and takes longer = latency increases.
      4. Eventually leads to OutOfMemoryError or performance degradation.
+- Complexity Reduction: Focus on reducing the time complexity of algorithms. Even small changes in algorithmic efficiency can have significant impacts on performance, especially in large-scale or high-frequency operations.
+- Loop Optimization: Simple techniques like minimizing work inside loops, avoiding method calls within loops, and loop unrolling can improve performance.
+   ![image](https://github.com/user-attachments/assets/758f613d-d184-4d3a-a046-e42552a520fc)
+- Lazy Evaluation: Delay computation or object creation until absolutely necessary, especially for expensive operations.
+- Understanding JIT Compilation: Java’s Just-In-Time (JIT) compiler optimizes code at runtime. Writing JIT-friendly code can enhance performance.
+- Inlining and Loop Unrolling: These are common optimizations performed by JIT. Writing code that facilitates these optimizations can result in faster execution.
+
+  ⚙️ JIT Optimizations:
+
+   1. Inlining: Replaces method calls with method body (reduces overhead).
+   2. Loop unrolling: Optimizes loops by reducing iteration cost.
+   3. Escape analysis: Detects if objects can be allocated on the stack instead of heap.
+   4. Dead code elimination: Removes unused computations.  
   
 
