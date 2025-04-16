@@ -67,3 +67,6 @@ Garbage collection is essential to achieve high performance and latency. The Jav
 ![image](https://github.com/user-attachments/assets/b07be760-9efe-44ad-b38c-1c98aabe35d1)
 
 - Synchronization Minimization: Overuse of synchronization can lead to thread contention and increased latency. Use finer-grained locks or lock-free data structures where appropriate.
+
+
+Ref: https://blog.stackademic.com/optimizing-java-for-low-latency-applications-803e181d0add
