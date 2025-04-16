@@ -63,3 +63,7 @@ Garbage collection is essential to achieve high performance and latency. The Jav
   
 ![image](https://github.com/user-attachments/assets/fb5352d7-66ab-453b-81c4-eb56404053f4)
 
+- Effective Use of Threads: Proper use of multithreading can significantly improve application performance, especially in multi-core environments.
+![image](https://github.com/user-attachments/assets/b07be760-9efe-44ad-b38c-1c98aabe35d1)
+
+- Synchronization Minimization: Overuse of synchronization can lead to thread contention and increased latency. Use finer-grained locks or lock-free data structures where appropriate.
